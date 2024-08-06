@@ -1,0 +1,146 @@
+{
+  "layer": "top",
+  "position": "top",
+  "reload_style_on_change": true,
+  "modules-left": [
+    "custom/l_end",
+    "cpu",
+    "custom/memory",
+    "network",
+    "custom/ping",
+    "custom/r_end"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "custom/l_end",
+    "tray",
+    //"custom/media",
+    "custom/updates",
+    "wireplumber",
+    "clock",
+    "custom/r_end"
+  ],
+  "tray": {
+    "icon-size": 15,
+    "spacing": 5
+  },
+  "clock": {
+    "interval": 1,
+    "format": "  {:%H:%M:%S ・ %d %b}",
+    "rotate": 0,
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b>{}</b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  },
+  "wireplumber": {
+    "scroll-step": 5,
+    "max-volume": 150,
+    "format": "{icon}  {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  //  I replaced this built-in module with my own script because I wanted to see more information, 
+  //  you can continue to use it if you wish, it's up to you.
+  // "memory": {
+  //  "interval": 1,
+  //  "format": "  {used:0.2f} / {total:0.0f} GB",
+  //  "min-length": 12,
+  //  "max-length": 20
+  // },
+  "cpu": {
+    "interval": 1,
+    "format": "  {usage}% ・ {max_frequency}GHz",
+    "min-length": 16,
+    "max-length": 20
+  },
+  "network": {
+    "interval": 1,
+    "format": "{icon}   {bandwidthTotalBytes}",
+    "format-icons": {
+      "wifi": "",
+      "ethernet": "",
+      "linked": ""
+    },
+    "format-disconnected": "",
+    "tooltip-format": "IP: {ipaddr}\nIF: {ifname}\n  {bandwidthUpBytes}\n  {bandwidthDownBytes}",
+    "tooltip-format-wifi": "SSID: {essid}\nGateway: {gwaddr}\nIP: {ipaddr}\nIF: {ifname}\nFrequency: {frequency}GHz\nStrength: {signalStrength}% ({signaldBm}dBm)\n  {bandwidthUpBytes} ・   {bandwidthDownBytes}",
+    "min-length": 10,
+    "max-length": 20
+  },
+  "custom/ping": {
+    "interval": 1,
+    "exec": "~/.config/waybar/scripts/ping.sh",
+    "return-type": "json",
+    "min-length": 10,
+    "max-length": 35
+  },
+  "custom/updates": {
+    "interval": 120,
+    "exec": "~/.config/waybar/scripts/checkupdates.sh",
+    "exec-if": "pacman -Qi pacman-contrib",
+    "on-click-right": "pkexec ~/.config/waybar/scripts/update.sh",
+    "return-type": "json"
+  },
+  "custom/memory": {
+    "interval": 1,
+    "exec": "~/.config/waybar/scripts/memory.sh",
+    "return-type": "json"
+  },
+  "custom/media": {
+    "interval": 1,
+    "format": "  {}",
+    "escape": true,
+    "tooltip": false,
+    "exec": "playerctl metadata --format='{{ artist }} - {{ title }}'",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous",
+    "max-length": 45
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    //"format-icons": {
+      //"urgent": "",
+      //"active": "",
+      //"default": ""
+     //},
+     "sort-by-number": true,
+     "all-outputs": true
+   }, 
+  "custom/l_end": {
+    "format": " ",
+    "interval": "once",
+    "tooltip": false
+  },
+  "custom/r_end": {
+    "format": " ",
+    "interval": "once",
+    "tooltip": false
+  }
+}

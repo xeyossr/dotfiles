@@ -1,0 +1,165 @@
+@import 'themes/mocha.css';
+
+* {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-weight: 800;
+  font-size: 11px;
+  border: none;
+  margin: 0 2px 0 2px;
+}
+
+#waybar {
+  background: transparent;
+}
+
+tooltip {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#workspaces {
+  background-color: @surface0;
+  border: 0.5px solid @surface2;
+  border-radius: 80px;
+  margin: 3px 1px 0;
+  padding: 1px;
+  opacity: 0.8;
+}
+
+#workspaces button {
+  color: @sky;
+  opacity: 0.5;
+  min-height: 15px;
+  border-radius: 100%;
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#workspaces button:hover {
+  color: @green;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+  color: @lavender;
+  opacity: 1;
+}
+
+#workspaces button.urgent {
+  opacity: 1;
+  color: @red;
+  background-color: @yellow;
+}
+
+#cpu,
+#memory, #custom-memory,
+#custom-media,
+#custom-ping,
+#custom-updates,
+#clock,
+#battery,
+#wireplumber,
+#network,
+#tray,
+#custom-l_end, #custom-r_end {
+  background-color: @surface0;
+  border: 0.5px solid @surface2;
+  opacity: 0.8;
+  margin-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#clock {
+	color: @blue;
+  border-left: 0;
+  margin-left: 0;
+  border-right: 0;
+  margin-right: 0;
+}
+
+#memory,
+#custom-memory {
+  color: @sky;
+  border-left: 0;
+  margin-left: 0;
+  border-right: 0;
+  margin-right: 0;
+}
+
+#cpu {
+  color: @teal;
+  border-left: 0;
+  margin-left: 0;
+  border-right: 0;
+  margin-right: 0;
+}
+
+#network {
+  color: @rosewater;
+  border-left: 0;
+  margin-left: 0;
+  border-right: 0;
+  margin-right: 0;
+}
+
+#battery,
+#battery.charging {
+	color: @green;
+  border-left: 0;
+  margin-left: 0;
+  border-right: 0;
+  margin-right: 0;
+}
+
+#battery.warning:not(.charging) {
+	color: @red;
+}
+
+#wireplumber {
+	color: @maroon;
+  margin-right: 0;
+  margin-left: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+#custom-media {
+	color: @mauve;
+  border-left: 0;
+  margin-left: 0;
+  border-right: 0;
+  margin-right: 0;
+}
+
+#custom-ping {
+  color: @peach;
+  margin-right: 0;
+  border-right: 0;
+  border-left: 0;
+  margin-left: 0;
+}
+
+#custom-updates {
+  color: @yellow;
+  border-left: 0;
+  margin-left: 0;
+  border-right: 0;
+  margin-right: 0;
+}
+
+#custom-r_end {
+  border-radius: 0 80px 80px 0;
+  padding-left: 0;
+  margin-left: 0;
+  border-left: 0;
+}
+
+#custom-l_end {
+  border-radius: 80px 0 0 80px;
+  padding-right: 0;
+  border-right: 0;
+  margin-right: 0;
+}

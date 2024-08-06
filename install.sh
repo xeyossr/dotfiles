@@ -1,3 +1,3 @@
-cp -r fastfetch hypr rofi waybar ~/.config/
-mkdir -p ~/.local/share/rofi
-cp -r .localrofi/* ~/.local/share/rofi/
+cp -r .config/* $HOME/.config/
+cp -r .local/share/* $HOME/.local/share/
+sudo cp -r fonts/* /usr/share/fonts/
