@@ -1,6 +1,5 @@
 # Xeyossr Dotfiles
-![1](screenshots/1.png)
-![2](screenshots/2.png)
+![1](screenshots/nasi.png)
 
 ```
 OS: Fedora 40
