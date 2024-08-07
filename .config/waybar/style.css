@@ -72,6 +72,13 @@ tooltip {
   padding-right: 10px;
 }
 
+#tray {
+border-left: 0;
+margin-left: 0;
+border-right: 0;
+margin-right: 0;
+}
+
 #clock {
 	color: @blue;
   border-left: 0;
