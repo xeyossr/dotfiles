@@ -102,8 +102,8 @@
   "custom/updates": {
     "interval": 120,
     "exec": "~/.config/waybar/scripts/checkupdates.sh",
-    "exec-if": "pacman -Qi pacman-contrib",
-    "on-click-right": "pkexec ~/.config/waybar/scripts/update.sh",
+    "exec-if": "dnf list updates",
+    "on-click-right": "sh ~/.config/waybar/scripts/update.sh",
     "return-type": "json"
   },
   "custom/memory": {
