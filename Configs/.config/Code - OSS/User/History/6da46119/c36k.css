@@ -1,0 +1,164 @@
+/* CSS Değişkenleri */
+:root {
+    --bg-color: #121212;
+    --input-bg-color: #1f1f1f;
+    --text-color: #e0e0e0;
+    --card-bg-color: #1e1e1e;
+    --border-color: #333;
+    --button-bg-color: #333;
+    --button-text-color: #fff;
+    /* Light Mode (Varsayılan) */
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --card-bg-color-light: #f4f4f4;
+    --border-color-light: #ddd;
+    --button-bg-color-light: #e0e0e0;
+    --button-text-color-light: #333;
+}
+
+/* Varsayılan: Dark Mode */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-box input[type="text"] {
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    width: 600px;
+    padding: 10px;
+    font-size: 17px;
+    background: var(--input-bg-color);
+}
+
+.search-box button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.book {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--card-bg-color);
+}
+
+.book img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.book-details {
+    max-width: 600px;
+}
+
+.book-title {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.book-author {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: #555;
+}
+
+.book-description {
+    font-size: 14px;
+    color: #777;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 3 satırda kes */
+    -webkit-box-orient: vertical;
+}
+
+/* Scrollbar Stilleri */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    transition: 1s;
+}
+
+::-webkit-scrollbar-corner {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(127, 127, 127, 0.6);
+    background-clip: padding-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Kullanıcı Bilgisi Stili */
+.user-info {
+    display: flex;
+    align-items: center;
+    position: fixed; /* Sayfanın en üstünde ve sağda sabit kalması için */
+    top: 20px; /* Üstten boşluk */
+    right: 20px; /* Sağdan boşluk */
+}
+
+.user-info img {
+    border-radius: 50%; /* Yuvarlak profil resmi */
+    width: 45px; /* Genişlik */
+    height: 45px; /* Yükseklik */
+    cursor: pointer; /* Tıklanabilir göstermek için */
+}
+
+.dropdown-menu {
+    width: 90px;
+    display: none; /* Başlangıçta gizli */
+    position: absolute; /* Kullanıcı bilginin altına yerleştir */
+    top: 48px; /* Profil resminin hemen altında yer alması için */
+    right: 0; /* Sağ kenara yasla */
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Diğer elemanların üstünde görünsün */
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover efekti */
+}
+
+/* Profil Resmine tıkladığında menüyü göster */
+.user-info.active .dropdown-menu {
+    display: block; /* Tıklandığında menüyü göster */
+}

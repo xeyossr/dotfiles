@@ -1,0 +1,346 @@
+[
+    {
+        "id":"1",
+        "name": "Dinlenme Bitti! - Pazartesi günü",
+        "description": "Dinlenme bitti! Kod çalışmalarına başla.",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "monday",
+        "time": "17:00"
+    },
+    {
+        "id":"2",
+        "name": "Dinlenme Vakti! - Pazartesi günü",
+        "description": "1 Saat dinlenme vakti",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "monday",
+        "time": "19:00"
+    },
+    {
+        "id":"3",
+        "name": "Proje vakti! - Pazartesi günü",
+        "description": "Dinlenme bitti. Şimdi öğrendiğin kodları projeye dökme vakti!",
+        "image_url": "/static/uploads/son hak 3.jpg",
+        "when": "monday",
+        "time": "20:00"
+    },
+    {
+        "id":"4",
+        "name": "Tarih 23 Temmuz 1908 kardeşim. - Pazartesi günü",
+        "description": "Hürriyetine kavuştun. Dinlen artık amk",
+        "image_url": "/static/uploads/Muzan red theme.jpg",
+        "when": "monday",
+        "time": "22:30"
+    },
+    {
+        "id":"5",
+        "name": "Hala uyumadın mı? - Pazartesi günü",
+        "description": "Sg uyu aq.",
+        "image_url": "/static/uploads/kibutsuji mozan.png",
+        "when": "monday",
+        "time": "02:00"
+    },
+    {
+        "id":"6",
+        "name": "Dinlenme Bitti! - Salı günü",
+        "description": "Dinlenme bitti! Kod çalışmalarına başla.",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "tuesday",
+        "time": "17:00"
+    },
+    {
+        "id":"7",
+        "name": "Dinlenme Vakti! - Salı günü",
+        "description": "1 Saat dinlenme vakti",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "tuesday",
+        "time": "19:00"
+    },
+    {
+        "id":"8",
+        "name": "Proje vakti! - Salı günü",
+        "description": "Dinlenme bitti. Şimdi öğrendiğin kodları projeye dökme vakti!",
+        "image_url": "/static/uploads/son hak 3.jpg",
+        "when": "tuesday",
+        "time": "20:00"
+    },
+    {
+        "id":"9",
+        "name": "Tarih 23 Temmuz 1908 kardeşim. - Salı günü",
+        "description": "Hürriyetine kavuştun. Dinlen artık amk",
+        "image_url": "/static/uploads/Muzan red theme.jpg",
+        "when": "tuesday",
+        "time": "22:30"
+    },
+    {
+        "id":"10",
+        "name": "Hala uyumadın mı? - Salı günü",
+        "description": "Sg uyu aq.",
+        "image_url": "/static/uploads/kibutsuji mozan.png",
+        "when": "tuesday",
+        "time": "02:00"
+    },
+    {
+        "id":"11",
+        "name": "Dinlenme Bitti! - Çarşamba günü",
+        "description": "Dinlenme bitti! Kod çalışmalarına başla.",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "wednesday",
+        "time": "17:00"
+    },
+    {
+        "id":"12",
+        "name": "Dinlenme Vakti! - Çarşamba günü",
+        "description": "1 Saat dinlenme vakti",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "wednesday",
+        "time": "19:00"
+    },
+    {
+        "id":"13",
+        "name": "Proje vakti! - Çarşamba günü",
+        "description": "Dinlenme bitti. Şimdi öğrendiğin kodları projeye dökme vakti!",
+        "image_url": "/static/uploads/son hak 3.jpg",
+        "when": "wednesday",
+        "time": "20:00"
+    },
+    {
+        "id":"14",
+        "name": "Tarih 23 Temmuz 1908 kardeşim. - Çarşamba günü",
+        "description": "Hürriyetine kavuştun. Dinlen artık amk",
+        "image_url": "/static/uploads/Muzan red theme.jpg",
+        "when": "wednesday",
+        "time": "22:30"
+    },
+    {
+        "id":"15",
+        "name": "Hala uyumadın mı? - Çarşamba günü",
+        "description": "Sg uyu aq.",
+        "image_url": "/static/uploads/kibutsuji mozan.png",
+        "when": "wednesday",
+        "time": "02:00"
+    },
+    {
+        "id":"16",
+        "name": "Dinlenme Bitti! - Perşembe günü",
+        "description": "Dinlenme bitti! Kod çalışmalarına başla.",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "thursday",
+        "time": "17:00"
+    },
+    {
+        "id":"17",
+        "name": "Dinlenme Vakti! - Perşembe günü",
+        "description": "1 Saat dinlenme vakti",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "thursday",
+        "time": "19:00"
+    },
+    {
+        "id":"18",
+        "name": "Proje vakti! - Perşembe günü",
+        "description": "Dinlenme bitti. Şimdi öğrendiğin kodları projeye dökme vakti!",
+        "image_url": "/static/uploads/son hak 3.jpg",
+        "when": "thursday",
+        "time": "20:00"
+    },
+    {
+        "id":"19",
+        "name": "Tarih 23 Temmuz 1908 kardeşim. - Perşembe günü",
+        "description": "Hürriyetine kavuştun. Dinlen artık amk",
+        "image_url": "/static/uploads/Muzan red theme.jpg",
+        "when": "thursday",
+        "time": "22:30"
+    },
+    {
+        "id":"20",
+        "name": "Hala uyumadın mı? - Perşembe günü",
+        "description": "Sg uyu aq.",
+        "image_url": "/static/uploads/kibutsuji mozan.png",
+        "when": "thursday",
+        "time": "02:00"
+    },
+    {
+        "id":"21",
+        "name": "Dinlenme Bitti! - Cuma günü",
+        "description": "Dinlenme bitti! Kod çalışmalarına başla.",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "friday",
+        "time": "17:00"
+    },
+    {
+        "id":"22",
+        "name": "Dinlenme Vakti! - Cuma günü",
+        "description": "1 Saat dinlenme vakti",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "friday",
+        "time": "19:00"
+    },
+    {
+        "id":"23",
+        "name": "Proje vakti! - Cuma günü",
+        "description": "Dinlenme bitti. Şimdi öğrendiğin kodları projeye dökme vakti!",
+        "image_url": "/static/uploads/son hak 3.jpg",
+        "when": "friday",
+        "time": "20:00"
+    },
+    {
+        "id":"24",
+        "name": "Tarih 23 Temmuz 1908 kardeşim. - Cuma günü",
+        "description": "Hürriyetine kavuştun. Dinlen artık amk",
+        "image_url": "/static/uploads/Muzan red theme.jpg",
+        "when": "friday",
+        "time": "22:30"
+    },
+    {
+        "id":"25",
+        "name": "Hala uyumadın mı? - Cuma günü",
+        "description": "Sg uyu aq.",
+        "image_url": "/static/uploads/kibutsuji mozan.png",
+        "when": "friday",
+        "time": "02:00"
+    },
+    {
+        "id":"26",
+        "name": "Günaydın - Cumartesi günü",
+        "description": "Günaydın! Güne motivasyon müzikleriyle başla ve sadece keyfini çıkar.",
+        "image_url": "/static/uploads/ubuyashiki kagaya.png",
+        "when": "saturday",
+        "time": "09:00"
+    },
+    {
+        "id":"27",
+        "name": "Projeye devam et - Cumartesi günü",
+        "description": "Bu kadar keyif yeter. Şimdi önceki günden kalan projelerine devam et.",
+        "image_url": "/static/uploads/ubuyashiki kagaya 2.png",
+        "when": "saturday",
+        "time": "10:00"
+    },
+    {
+        "id":"28",
+        "name": "Dinlenme vakti - Cumartesi günü",
+        "description": "Eğer işin bittiyse artık dinlenebilirsin. 3 Saatin var",
+        "image_url": "/static/uploads/ubuyashiki kagaya 2.png",
+        "when": "saturday",
+        "time": "13:00"
+    },
+    {
+        "id":"29",
+        "name": "Kod çalış - Cumartesi günü",
+        "description": "Çok bile dinlendin. Şimdi kod çalışmalarına devam et!",
+        "image_url": "/static/uploads/Yoriichi 2.jpg",
+        "when": "saturday",
+        "time": "16:00"
+    },
+    {
+        "id":"30",
+        "name": "Allah'ın rahmetine talib ol - Cumartesi günü",
+        "description": "Kuran, Hadis ve Kelam oku. ",
+        "image_url": "/static/uploads/tokito 2.png",
+        "when": "saturday",
+        "time": "19:00"
+    },
+    {
+        "id":"31",
+        "name": "Kafanı dağıt - Cumartesi günü",
+        "description": "Allah sana rahmet etsin. Şimdi 30 dakika boyunca kafanı dağıt, ardından mantık soruları çözeceksin.",
+        "image_url": "/static/uploads/son hak.jpg",
+        "when": "saturday",
+        "time": "21:00"
+    },
+    {
+        "id":"32",
+        "name": "Ilm al Mantiq - Cumartesi günü",
+        "description": "Mantık soruları çalışmaya başla. Kolay gelsin.",
+        "image_url": "/static/uploads/6688984d7dc04587997a249c77c2836e.jpg",
+        "when": "saturday",
+        "time": "21:30"
+    },
+    {
+        "id":"33",
+        "name": "Hürriyet - Cumartesi günü",
+        "description": "Bundan sonrası serbestsin. En geç 3'de uyumayı unutma!",
+        "image_url": "/static/uploads/son hak 2.jpg",
+        "when": "saturday",
+        "time": "22:00"
+    },
+    {
+        "id":"34",
+        "name": "Uyu artık. - Cumartesi günü",
+        "description": "Sg uyu aq.",
+        "image_url": "/static/uploads/son hak 2.jpg",
+        "when": "saturday",
+        "time": "03:00"
+    },
+    {
+        "id":"35",
+        "name": "Günaydın - Pazar günü",
+        "description": "Günaydın! Güne motivasyon müzikleriyle başla ve sadece keyfini çıkar.",
+        "image_url": "/static/uploads/ubuyashiki kagaya.png",
+        "when": "sunday",
+        "time": "09:00"
+    },
+    {
+        "id":"36",
+        "name": "Projeye devam et - Pazar günü",
+        "description": "Bu kadar keyif yeter. Şimdi önceki günden kalan projelerine devam et.",
+        "image_url": "/static/uploads/ubuyashiki kagaya 2.png",
+        "when": "sunday",
+        "time": "10:00"
+    },
+    {
+        "id":"37",
+        "name": "Dinlenme vakti - Pazar günü",
+        "description": "Eğer işin bittiyse artık dinlenebilirsin. 3 Saatin var",
+        "image_url": "/static/uploads/ubuyashiki kagaya 2.png",
+        "when": "sunday",
+        "time": "13:00"
+    },
+    {
+        "id":"38",
+        "name": "Kod çalış - Pazar günü",
+        "description": "Çok bile dinlendin. Şimdi kod çalışmalarına devam et!",
+        "image_url": "/static/uploads/Yoriichi 2.jpg",
+        "when": "sunday",
+        "time": "16:00"
+    },
+    {
+        "id":"39",
+        "name": "Allah'ın rahmetine talib ol - Pazar günü",
+        "description": "Kuran, Hadis ve Kelam oku. ",
+        "image_url": "/static/uploads/tokito 2.png",
+        "when": "sunday",
+        "time": "19:00"
+    },
+    {
+        "id":"40",
+        "name": "Kafanı dağıt - Pazar günü",
+        "description": "Allah sana rahmet etsin. Şimdi 30 dakika boyunca kafanı dağıt, ardından mantık soruları çözeceksin.",
+        "image_url": "/static/uploads/son hak.jpg",
+        "when": "sunday",
+        "time": "21:00"
+    },
+    {
+        "id":"41",
+        "name": "Ilm al Mantiq - Pazar günü",
+        "description": "Mantık soruları çalışmaya başla. Kolay gelsin.",
+        "image_url": "/static/uploads/6688984d7dc04587997a249c77c2836e.jpg",
+        "when": "sunday",
+        "time": "21:30"
+    },
+    {
+        "id":"42",
+        "name": "Hürriyet - Pazar günü",
+        "description": "Bundan sonrası serbestsin. En geç 3'de uyumayı unutma!",
+        "image_url": "/static/uploads/son hak 2.jpg",
+        "when": "sunday",
+        "time": "22:00"
+    },
+    {
+        "id":"43",
+        "name": "ewfwef",
+        "description": "DDD",
+        "image_url": "",
+        "when": "everyday",
+        "time": "13:13"
+    }
+]

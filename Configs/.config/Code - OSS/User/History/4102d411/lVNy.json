@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "alocalias",
+    "version": "1.0",
+    "description": "Redirect discipline4.everyone to localhost:5000.",
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "*://discipline4.everyone/*"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    }
+  }
+  

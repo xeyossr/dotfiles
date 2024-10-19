@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discipline4everyone</title>
+    <script src="../static/js/app.js"></script>
+    <link href="../static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="popupOverlay"></div> <!-- Arka plan için saydam div -->
+    <button class="add-task" role="button" onclick="document.getElementById('popupForm').showModal(); document.getElementById('popupOverlay').style.display = 'block';">Add Task</button>
+
+    <!-- Popup Form -->
+    <dialog id="popupForm">
+        <form id="taskForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br><br>
+
+            <label for="image_url">Image URL:</label>
+            <input type="url" id="image_url" name="image_url"><br><br>
+
+            <label for="image_file">Image File:</label>
+            <input type="file" id="image_file" name="image_file" accept="image/*"><br><br>
+
+            <label for="when">When:</label>
+            <select id="when" name="when">
+                <option value="everyday">Her gün</option>
+                <option value="monday">Pazartesi</option>
+                <option value="tuesday">Salı</option>
+                <option value="wednesday">Çarşamba</option>
+                <option value="thursday">Perşembe</option>
+                <option value="friday">Cuma</option>
+                <option value="saturday">Cumartesi</option>
+                <option value="sunday">Pazar</option>
+            </select><br><br>
+
+            <label for="time">Time (HH:MM):</label>
+            <input type="time" id="time" name="time" required><br><br>
+
+            <button type="submit">Add</button>
+            <button type="button" onclick="document.getElementById('popupForm').close(); document.getElementById('popupOverlay').style.display = 'none';">Cancel</button>
+        </form>
+    </dialog>
+
+    <!-- Task'ların gösterileceği alan -->
+    <div id="taskContainer"></div>
+
+</body>
+</html>

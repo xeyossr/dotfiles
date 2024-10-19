@@ -1,0 +1,23 @@
+{
+    "BakuElectronics": {
+        "name_class":"product__heading product__heading_desk",
+        "name_tag": "h1",
+        "price_class": "product__price--cur",
+        "price_tag": "font",
+        "image_class": "gallery__main-slide",
+        "image_tag": "a",
+        "site_url": "https://www.bakuelectronics.az"
+    },
+    "Trendyol": {
+        "name_class":"pr-new-br",
+        "name_tag": "span",
+        "price_class": "prc-dsc",
+        "price_tag": "span",
+        "image_class": "base-product-image",
+        "image_tag": "img",
+        "site_url": "https://www.trendyol.com",
+        "image_url_join": false,
+        "name_tag_in_class": true,
+        "price_tag_in_class": false
+    }
+}

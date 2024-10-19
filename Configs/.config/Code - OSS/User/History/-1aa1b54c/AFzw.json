@@ -1,0 +1,177 @@
+[
+    {
+        "name": "Dinlenme Bitti!",
+        "description": "Dinlenme bitti! Kod çalışmalarına başla.",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "monday",
+        "time": "17:00"
+    },
+    {
+        "name": "Dinlenme Vakti!",
+        "description": "1 Saat dinlenme vakti",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "monday",
+        "time": "19:00"
+    },
+    {
+        "name": "Proje vakti!",
+        "description": "Dinlenme bitti. Şimdi öğrendiğin kodları projeye dökme vakti!",
+        "image_url": "/static/uploads/son hak 3.jpg",
+        "when": "monday",
+        "time": "20:00"
+    },
+    {
+        "name": "Tarih 23 Temmuz 1908 kardeşim.",
+        "description": "Hürriyetine kavuştun. Dinlen artık amk",
+        "image_url": "/static/uploads/Muzan red theme.jpg",
+        "when": "monday",
+        "time": "22:30"
+    },
+    {
+        "name": "Hala uyumadın mı?",
+        "description": "Sg uyu aq.",
+        "image_url": "/static/uploads/kibutsuji mozan.png",
+        "when": "monday",
+        "time": "02:00"
+    },
+    {
+        "name": "Dinlenme Bitti!",
+        "description": "Dinlenme bitti! Kod çalışmalarına başla.",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "tuesday",
+        "time": "17:00"
+    },
+    {
+        "name": "Dinlenme Vakti!",
+        "description": "1 Saat dinlenme vakti",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "tuesday",
+        "time": "19:00"
+    },
+    {
+        "name": "Proje vakti!",
+        "description": "Dinlenme bitti. Şimdi öğrendiğin kodları projeye dökme vakti!",
+        "image_url": "/static/uploads/son hak 3.jpg",
+        "when": "tuesday",
+        "time": "20:00"
+    },
+    {
+        "name": "Tarih 23 Temmuz 1908 kardeşim.",
+        "description": "Hürriyetine kavuştun. Dinlen artık amk",
+        "image_url": "/static/uploads/Muzan red theme.jpg",
+        "when": "tuesday",
+        "time": "22:30"
+    },
+    {
+        "name": "Hala uyumadın mı?",
+        "description": "Sg uyu aq.",
+        "image_url": "/static/uploads/kibutsuji mozan.png",
+        "when": "tuesday",
+        "time": "02:00"
+    },
+    {
+        "name": "Dinlenme Bitti!",
+        "description": "Dinlenme bitti! Kod çalışmalarına başla.",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "wednesday",
+        "time": "17:00"
+    },
+    {
+        "name": "Dinlenme Vakti!",
+        "description": "1 Saat dinlenme vakti",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "wednesday",
+        "time": "19:00"
+    },
+    {
+        "name": "Proje vakti!",
+        "description": "Dinlenme bitti. Şimdi öğrendiğin kodları projeye dökme vakti!",
+        "image_url": "/static/uploads/son hak 3.jpg",
+        "when": "wednesday",
+        "time": "20:00"
+    },
+    {
+        "name": "Tarih 23 Temmuz 1908 kardeşim.",
+        "description": "Hürriyetine kavuştun. Dinlen artık amk",
+        "image_url": "/static/uploads/Muzan red theme.jpg",
+        "when": "wednesday",
+        "time": "22:30"
+    },
+    {
+        "name": "Hala uyumadın mı?",
+        "description": "Sg uyu aq.",
+        "image_url": "/static/uploads/kibutsuji mozan.png",
+        "when": "wednesday",
+        "time": "02:00"
+    },
+    {
+        "name": "Dinlenme Bitti!",
+        "description": "Dinlenme bitti! Kod çalışmalarına başla.",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "thursday",
+        "time": "17:00"
+    },
+    {
+        "name": "Dinlenme Vakti!",
+        "description": "1 Saat dinlenme vakti",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "thursday",
+        "time": "19:00"
+    },
+    {
+        "name": "Proje vakti!",
+        "description": "Dinlenme bitti. Şimdi öğrendiğin kodları projeye dökme vakti!",
+        "image_url": "/static/uploads/son hak 3.jpg",
+        "when": "thursday",
+        "time": "20:00"
+    },
+    {
+        "name": "Tarih 23 Temmuz 1908 kardeşim.",
+        "description": "Hürriyetine kavuştun. Dinlen artık amk",
+        "image_url": "/static/uploads/Muzan red theme.jpg",
+        "when": "thursday",
+        "time": "22:30"
+    },
+    {
+        "name": "Hala uyumadın mı?",
+        "description": "Sg uyu aq.",
+        "image_url": "/static/uploads/kibutsuji mozan.png",
+        "when": "thursday",
+        "time": "02:00"
+    },
+    {
+        "name": "Dinlenme Bitti!",
+        "description": "Dinlenme bitti! Kod çalışmalarına başla.",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "friday",
+        "time": "17:00"
+    },
+    {
+        "name": "Dinlenme Vakti!",
+        "description": "1 Saat dinlenme vakti",
+        "image_url": "/static/uploads/Prens Izana.jpg",
+        "when": "friday",
+        "time": "19:00"
+    },
+    {
+        "name": "Proje vakti!",
+        "description": "Dinlenme bitti. Şimdi öğrendiğin kodları projeye dökme vakti!",
+        "image_url": "/static/uploads/son hak 3.jpg",
+        "when": "friday",
+        "time": "20:00"
+    },
+    {
+        "name": "Tarih 23 Temmuz 1908 kardeşim.",
+        "description": "Hürriyetine kavuştun. Dinlen artık amk",
+        "image_url": "/static/uploads/Muzan red theme.jpg",
+        "when": "friday",
+        "time": "22:30"
+    },
+    {
+        "name": "Hala uyumadın mı?",
+        "description": "Sg uyu aq.",
+        "image_url": "/static/uploads/kibutsuji mozan.png",
+        "when": "friday",
+        "time": "02:00"
+    }
+]

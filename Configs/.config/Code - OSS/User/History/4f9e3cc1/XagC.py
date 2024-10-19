@@ -1,0 +1,97 @@
+from flask import Flask, render_template, redirect, url_for, request, sqlite3
+import json
+
+app = Flask(__name__)
+app.secret_key = 'xeyoss'
+
+# Veritabanına bağlanma
+def get_db():
+    conn = sqlite3.connect(DATABASE)
+    conn.row_factory = sqlite3.Row
+    return conn
+
+# Kullanıcıyı veritabanından çekme
+def get_user_by_username(username):
+    conn = get_db()
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM users WHERE username = ?", (username,))
+    return cur.fetchone()
+
+# JSON dosyasını oku
+def load_books():
+    with open('books.json', 'r', encoding='utf-8') as f:
+        books = json.load(f)
+    return books
+
+
+
+# Giriş sayfası
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        user = get_user_by_username(username)
+
+        if user and check_password_hash(user['password'], password):
+            session['user_id'] = user['id']
+            session['username'] = user['username']
+            session['profile_image'] = user['profile_image']
+            flash('Başarıyla giriş yaptınız!', 'success')
+            return redirect(url_for('index'))
+        else:
+            flash('Geçersiz kullanıcı adı veya şifre', 'danger')
+    
+    return render_template('login.html')
+
+# Çıkış yapma
+@app.route('/logout')
+def logout():
+    session.clear()
+    flash('Çıkış yaptınız', 'success')
+    return redirect(url_for('login'))
+
+
+
+
+# Ana sayfa: Kitap listesi ve arama
+@app.route('/', methods=['GET'])
+def index():
+    query = request.args.get('query')
+    books = load_books()
+
+    if query:
+        # Arama yap: kitap başlıkları ve yazarlar üzerinden arama
+        books = [book for book in books if query.lower() in book['title'].lower() or query.lower() in book['author'].lower()]
+
+    return render_template('index.html', books=books)
+
+# Kitap detayı: Bir kitaba tıklandığında detay sayfasına git
+@app.route('/book/<int:book_id>')
+def book_details(book_id):
+    books = load_books()
+    book = next((book for book in books if book['id'] == book_id), None)
+
+    if book is None:
+        return redirect(url_for('index'))
+
+    return render_template('book_details.html', book=book)
+
+# Kitap okuma sayfası: Oku butonuna basıldığında kitabı okumaya başla
+@app.route('/read/<int:book_id>')
+def read_book(book_id):
+    books = load_books()
+    book = next((book for book in books if book['id'] == book_id), None)
+
+    if book is None:
+        return redirect(url_for('index'))
+
+    # JSON formatında tutulan içerikleri çözümleyelim
+    pages = book['content']
+    
+    return render_template('reader.html', pages=pages, title=book['title'])
+    
+# Flask uygulamasını çalıştırma
+if __name__ == '__main__':
+    app.run(port=2000, debug=True)

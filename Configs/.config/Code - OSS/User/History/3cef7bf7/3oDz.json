@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "title": "Kitap 1",
+        "author": "Yazar 1",
+        "description": "Açıklama 1",
+        "cover_image": "/static/images/cover1.jpg",
+        "content": {
+            "1": "Birinci sayfa içeriği",
+            "2": "İkinci sayfa içeriği"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Kitap 2",
+        "author": "Yazar 2",
+        "description": "Açıklama 2",
+        "cover_image": "/static/images/cover2.jpg",
+        "content": {
+            "1": "Birinci sayfa içeriği",
+            "2": "İkinci sayfa içeriği"
+        }
+    }
+]

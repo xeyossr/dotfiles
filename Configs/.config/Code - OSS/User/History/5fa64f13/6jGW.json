@@ -1,0 +1,8 @@
+{
+    "BakuElectronics": {
+        "name_div":"product__heading product__heading_desk",
+        "name_tag": "h1",
+        "price_div": "product__price--cur",
+        "price_tag": "font"
+    }
+}

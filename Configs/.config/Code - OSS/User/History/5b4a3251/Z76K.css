@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  transition: 1s;
+}
+
+::-webkit-scrollbar-corner {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(127, 127, 127, 0.6);
+  background-clip: padding-box;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+:root {
+    --vs-primary: 29 92 255;
+    --background-color: #121212; /* Koyu arka plan */
+    --text-color: #ffffff; /* Beyaz metin rengi */
+    --card-background: #1e1e1e; /* Koyu kart arka planı */
+    --border-color: #333; /* Koyu sınır rengi */
+}
+
+body {
+    background-color: #121212;
+    color: e0e0e0;
+    user-select: none
+    
+}
+
+li:hover {
+  background-color: #3F4042;
+}
+
+#custom-context-menu {
+  background-color: #121212;
+}
+
+img {
+  pointer-events: none;
+}
+/* Popup arka planı */
+
+#popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Saydam siyah */
+    display: none; /* Başlangıçta gizli */
+    z-index: 999; /* Popup'tan önce gelsin */
+}
+
+/* Popup stilini ayarlıyoruz */
+/*#popupForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    z-index: 1000;
+    animation: slideIn 0.5s forwards;
+}*/
+
+
+/* Popup stili */
+dialog {
+    padding: 1rem 3rem;
+    padding-top: 2rem;
+    border-radius: 20px;
+	border: 0;
+    max-width: 700px;
+	box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+	animation: fadeIn 1s ease both;
+    border: none; /* Kenar boşluğunu kaldır */
+    padding: 20px;
+    background: #1e1e1e;
+    color: #ffffff;
+    z-index: 1000; /* En üstte görünsün */
+    &::backdrop {
+		animation: fadeIn 1s ease both;
+		z-index: 2;
+		backdrop-filter: blur(20px);
+	}
+}
+
+
+/* Giriş alanları için stil ayarları */
+input, textarea, select {
+    background-color: #333; /* Koyu arka plan */
+    color: #fff; /* Açık metin rengi */
+    border: 1px solid #555; /* Koyu kenar */
+    border-radius: 5px; /* Yuvarlak köşeler */
+    padding: 10px; /* İç boşluk */
+    width: calc(100% - 22px); /* Genişliği ayarla */
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+
+
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+/* Dialog açıldığında arka planı göster */
+dialog[open] + #popupOverlay {
+    display: block; /* Dialog açıldığında göster */
+}
+
+
+/* Popup kapanma animasyonu */
+@keyframes slideIn {
+    from {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+}
+
+/* Task kutucuklarının stili */
+
+.task-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.task-image {
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.task-info {
+    display: flex;
+    align-items: flex-start;
+    width: 98%;
+    border: 1px solid var(--border-color); /* Koyu sınır */
+    border-radius: 8px; /* Kenar yuvarlama */
+    padding: 5px;
+    margin-top: 23px;
+    transition: box-shadow 0.3s; /* Geçiş efekti */
+    position: relative; /* Mutlak konumlandırma */
+    background: var(--card-background); /* Koyu kart arka planı */
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.task-info:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Hover etkisi */
+}
+
+button i {
+  pointer-events: none; /* İkon tıklamalarını engeller */
+}
+
+.task-info h3 {
+    margin: 0;
+    color: white;
+    font-size: 1.6em;
+}
+
+.task-info p {
+    margin: 5px 0;
+    color: #dadada;
+    font-size: 1.1em;
+}
+
+.task-info span {
+    color: #b4b4b4;
+    font-size: 0.95em;
+    margin-top: 18px;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column; /* Dikey hizalama */
+    justify-content: center; /* Ortala */
+    flex-grow: 1; /* Genişliği artırır */
+}
+
+.delete-button {
+  height: 30px;
+  background-color: #ff1a1a; /* Kırmızı arka plan */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.delete-button:hover {
+  background-color: #d61111; /* Hover rengi */
+}
+
+
+.edit-button {
+  height: 30px;
+  background-color: #1a63ff; /* Kırmızı arka plan */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  position: absolute;
+  top: 50px;
+  right: 7px;
+}
+
+.edit-button:hover {
+  background-color: #0229b7; /* Hover rengi */
+}
+
+
+
+
+.add-task {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.add-task:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.add-task:hover {
+  background-color: #2c974b;
+}
+
+.add-task:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.add-task:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.add-task:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+.confirm {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.confirm:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+.confirm:hover {
+    background-color: #2c974b;
+  }
+  
+.confirm:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+  
+.confirm:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+.confirm:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }
+  
+.x {
+    background-color: #ff1a1a;
+    appearance: none;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.x:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+.x:hover {
+    background-color: #d61111;
+  }
+  
+.x:focus {
+    box-shadow: rgba(199, 8, 8, 0.4) 0 0 0 3px;
+    outline: none;
+  }
+  
+.x:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+.x:active {
+    background-color: #be0d0d;
+    box-shadow: rgba(117, 3, 3, 0.2) 0 1px 0 inset;
+  }
+
+@media (max-width: 435px) {
+    body {
+        font-size: 14px; /* Daha küçük yazı boyutu */
+        padding: 10px; /* Daha fazla iç boşluk */
+    }
+
+    .task-info {
+      display: flex;
+      flex-direction: column; /* Dikey hizalama */
+      justify-content: space-between; /* Boşluğu eşit dağıt */
+      align-items: stretch; /* Tüm öğeleri genişlet */
+      width: 98%;
+      border: 1px solid var(--border-color); /* Koyu sınır */
+      border-radius: 8px; /* Kenar yuvarlama */
+      padding: 5px;
+      margin-top: 23px;
+      transition: box-shadow 0.3s; /* Geçiş efekti */
+      position: relative; /* Mutlak konumlandırma */
+      background: var(--card-background); /* Koyu kart arka planı */
+      font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+      font-size: 14px;
+      font-weight: 600;
+      padding-bottom: 120px;
+  }
+
+    .task-info span, .task-info h3, .task-info p {
+      text-align: center;
+    }
+
+    .task-info span {
+      display: block;
+    }
+
+    .task-image {
+        margin: 0 auto 10px; /* Resmi ortala ve altına boşluk ekle */
+        width: 100%; /* Resmi tam genişlikte yap */
+        height: auto;
+    }
+
+    .delete-button,
+    .edit-button {
+        margin: 5px 0;
+        width: calc(100% - 14px);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .delete-button {
+      top: calc(80% + 10px); /* Span'ın konumunun altında 10px boşluk */
+    }
+  
+    .edit-button {
+      top: calc(80% + 10px + 40px); /* İlk butonun hemen altında 20px boşluk */
+    }
+
+    dialog {
+        max-width: 90%; /* Dialog genişliğini küçült */
+        padding: 10px; /* Dialog iç boşluğunu azalt */
+    }
+
+    /* Diğer stiller burada tanımlanabilir */
+}
+
+@media only screen and (min-width: 436px) and (max-width: 520px) {
+  body {
+    padding: 10px; /* Daha fazla iç boşluk */
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column; /* Dikey hizalama */
+  justify-content: space-between; /* Boşluğu eşit dağıt */
+  align-items: stretch; /* Tüm öğeleri genişlet */
+  width: 98%;
+  border: 1px solid var(--border-color); /* Koyu sınır */
+  border-radius: 8px; /* Kenar yuvarlama */
+  padding: 5px;
+  margin-top: 23px;
+  transition: box-shadow 0.3s; /* Geçiş efekti */
+  position: relative; /* Mutlak konumlandırma */
+  background: var(--card-background); /* Koyu kart arka planı */
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 120px;
+}
+
+.task-info span, .task-info h3, .task-info p {
+  text-align: center;
+}
+
+.task-info h3 {
+  font-size: 30px !important;
+}
+
+.task-info p {
+  font-size: 20px !important;
+}
+
+.task-info span {
+  display: block;
+  font-size: 1.2em;
+}
+
+.task-image {
+    margin: 0 auto 10px; /* Resmi ortala ve altına boşluk ekle */
+    width: 100%; /* Resmi tam genişlikte yap */
+    height: auto;
+}
+
+.delete-button,
+.edit-button {
+    margin: 5px 0;
+    width: calc(100% - 14px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.delete-button {
+  top: calc(80% + 30px); /* Span'ın konumunun altında 10px boşluk */
+}
+
+.edit-button {
+  top: calc(80% + 30px + 40px); /* İlk butonun hemen altında 20px boşluk */
+}
+
+dialog {
+    max-width: 90%; /* Dialog genişliğini küçült */
+    padding: 10px; /* Dialog iç boşluğunu azalt */
+}
+
+/* Diğer stiller burada tanımlanabilir */
+}
+
+@media only screen and (min-width: 521px) and (max-width: 1024px) {
+  .task-info h3 {
+    margin-right: 60px;
+  }
+
+  .task-info p {
+    margin-right: 60px;
+  }
+}
+
+/* Orta boy ekranlar (tabletler) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Orta boy ekranlar için özel stiller */
+}
+
+/* Büyük ekranlar (masaüstü) */
+@media only screen and (min-width: 1025px) {
+  /* Büyük ekranlar için özel stiller */
+}

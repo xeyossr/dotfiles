@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Listesi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Kitap Listesi</h1>
+    {% if username %}
+        <div class="user-info">
+            <img src="{{ profile_image }}" alt="Profil Resmi" width="50">
+            <p>Hoşgeldin, {{ username }}</p>
+            <a href="/logout">Çıkış Yap</a>
+        </div>
+    {% endif %}
+
+    <div class="search-box">
+        <form method="GET" action="/">
+            <input type="text" name="query" placeholder="Kitap ara..." value="{{ request.args.get('query', '') }}">
+            <button type="submit">Ara</button>
+        </form>
+    </div>
+
+    <div class="book-list">
+        {% for book in books %}
+        <div class="book">
+            <img src="{{ book.cover_image }}" alt="Kitap Kapağı">
+            <div class="book-details">
+                <div class="book-title">{{ book.title }}</div>
+                <div class="book-author">{{ book.author }}</div>
+                <div class="book-description">{{ book.description[:150] }}...</div>
+                <a href="{{ url_for('book_details', book_id=book.id) }}">Detayları Gör</a>
+            </div>
+        </div>
+        {% else %}
+        <p>Hiç kitap bulunamadı.</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

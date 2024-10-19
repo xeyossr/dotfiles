@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discipline4everyone</title>
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="popupOverlay"></div> <!-- Arka plan için saydam div -->
+    <button class="add-task" role="button" onclick="showPopup();"><i class="fa fa-plus" aria-hidden="true"></i></button>
+    <!-- Popup Form -->
+    <dialog id="popupForm">
+        <form id="taskForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br><br>
+
+            <label for="image_url">Image URL:</label>
+            <input type="url" id="image_url" name="image_url"><br><br>
+
+            <label for="image_file">Image File:</label>
+            <input type="file" id="image_file" name="image_file" accept="image/*"><br><br>
+
+            <label for="when">When:</label>
+            <select id="when" name="when">
+                <option value="everyday">Her gün</option>
+                <option value="monday">Pazartesi</option>
+                <option value="tuesday">Salı</option>
+                <option value="wednesday">Çarşamba</option>
+                <option value="thursday">Perşembe</option>
+                <option value="friday">Cuma</option>
+                <option value="saturday">Cumartesi</option>
+                <option value="sunday">Pazar</option>
+            </select><br><br>
+
+            <label for="time">Time (HH:MM):</label>
+            <input type="time" id="time" name="time" required><br><br>
+
+            <button type="submit" class="confirm">Add</button>
+            <button type="button" class="x" onclick="closePopup();">Cancel</button>
+        </form>
+    </dialog>
+    
+    <!-- Edit popup -->
+    
+    <dialog id="editPopupForm">
+        <form id="editTaskForm" onsubmit="submitEditForm(event)">
+            <label for="edit_name">Name:</label>
+            <input type="text" id="edit_name" name="name" required><br><br>
+    
+            <label for="edit_description">Description:</label>
+            <textarea id="edit_description" name="description" required></textarea><br><br>
+    
+            <label for="edit_image_url">Image URL:</label>
+            <input type="text" id="edit_image_url" name="image_url"><br><br>
+    
+            <label for="edit_image_file">Image File:</label>
+            <input type="file" id="edit_image_file" name="image_file" accept="image/*"><br><br>
+    
+            <label for="edit_when">When:</label>
+            <select id="edit_when" name="when">
+                <option value="everyday">Her gün</option>
+                <option value="monday">Pazartesi</option>
+                <option value="tuesday">Salı</option>
+                <option value="wednesday">Çarşamba</option>
+                <option value="thursday">Perşembe</option>
+                <option value="friday">Cuma</option>
+                <option value="saturday">Cumartesi</option>
+                <option value="sunday">Pazar</option>
+            </select><br><br>
+    
+            <label for="edit_time">Time (HH:MM):</label>
+            <input type="time" id="edit_time" name="time" required><br><br>
+    
+            <button type="submit" class="confirm">Save</button>
+            <button type="button" class="x" onclick="closeEditPopup();">Cancel</button>
+        </form>
+    </dialog>
+    
+    <ul id="custom-context-menu" style="display:none; position:absolute; background:#292A2D; border:none; color:#E8EAED; border-radius: 10px; list-style:none; padding:10px;">
+        <li onclick="showPopup();" style='text-align: center; padding: 5px 10px; font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";' onclick="customAction('action1')"><i class="fa fa-plus" aria-hidden="true"></i> Add Task</li>
+    </ul>    
+    
+    <!-- Task'ların gösterileceği alan -->
+    <div id="taskContainer"></div>
+
+</body>
+<script src="../static/js/app.js"></script>
+</html>

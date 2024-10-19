@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Localhost Redirect",
+    "version": "1.0",
+    "description": "Redirects discipline4.everyone to localhost:5000",
+    "permissions": ["tabs", "webRequest", "webRequestBlocking", "<all_urls>"],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

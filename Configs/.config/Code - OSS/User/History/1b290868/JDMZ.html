@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Listesi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .search-box {
+            margin-bottom: 20px;
+        }
+        .search-box input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .search-box button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .book-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .book {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .book img {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .book-details {
+            max-width: 600px;
+        }
+        .book-title {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+        .book-author {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            color: #555;
+        }
+        .book-description {
+            font-size: 14px;
+            color: #777;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* 3 satırda kes */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kitap Listesi</h1>
+
+    <!-- Arama kutusu -->
+    <div class="search-box">
+        <form method="GET" action="/">
+            <input type="text" name="query" placeholder="Kitap ara..." value="{{ request.args.get('query', '') }}">
+            <button type="submit">Ara</button>
+        </form>
+    </div>
+
+    <!-- Kitap listesi -->
+    <div class="book-list">
+        {% for book in books %}
+        <div class="book">
+            <img src="{{ book[4] }}" alt="Kitap Kapağı">
+            <div class="book-details">
+                <div class="book-title">{{ book[1] }}</div>
+                <div class="book-author">{{ book[2] }}</div>
+                <div class="book-description">{{ book[3][:150] }}...</div> <!-- 150 karakter sınırı -->
+                <a href="{{ url_for('book_details', book_id=book[0]) }}">Detayları Gör</a>
+            </div>
+        </div>
+        {% else %}
+        <p>Hiç kitap bulunamadı.</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

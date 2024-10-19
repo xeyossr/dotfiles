@@ -1,0 +1,101 @@
+2024-10-18 19:22:56.783 [info] Telemetry level is off
+2024-10-18 19:22:56.783 [info] Experiments are disabled, only manually opted experiments are active.
+2024-10-18 19:22:56.783 [warning] Dir "/home/xeyossr/Documents/Coding/20Projects/Stalker/.pixi/envs" is not watchable (directory does not exist)
+2024-10-18 19:22:56.783 [info] Default formatter is set to null for workspace /home/xeyossr/Documents/Coding/20Projects/Stalker
+2024-10-18 19:22:56.784 [error] Unable to check if shell integration is active [Error: Extension 'ms-python.python' CANNOT use API proposal: terminalDataWriteEvent.
+Its package.json#enabledApiProposals-property declares:  but NOT terminalDataWriteEvent.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at H (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:112:16479)
+	at a.onDidWriteTerminalData (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:45894)
+	at new v (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:911828)
+	at me (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1761402)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764766
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764794
+	at Se (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764861)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765341
+	at we (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765282)
+	at Pe (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765316)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1762555
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764160
+	at Array.reduce (<anonymous>)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764132
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764414
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764794
+	at Se (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764861)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765341
+	at we (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765282)
+	at Pe (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765316)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1762555
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1792225
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1792246
+	at e._get (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1791259)
+	at e._getButThrowIfAsync (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1791319)
+	at e.get (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1787028)
+	at e.dynamicValue (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1776761)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1762938
+	at Ee (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1763194)
+	at Se (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764910)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765341
+	at we (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765282)
+	at Pe (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765316)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1762555
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1762489
+	at Array.map (<anonymous>)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1762460
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764160
+	at Array.reduce (<anonymous>)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764132
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764414
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764794
+	at Se (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1764861)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765341
+	at we (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765282)
+	at Pe (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1765316)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1762555
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1792225
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1792246
+	at e._get (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1791259)
+	at e._getButThrowIfAsync (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1791319)
+	at e.get (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:1787028)
+	at a.get (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:525708)
+	at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:441541
+	at async t.activateComponents (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:439784)
+	at async /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:2718965
+	at async e (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:2718497)
+	at async x0.n (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:4450)
+	at async x0.m (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:4413)
+	at async x0.l (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:3869)]
+2024-10-18 19:22:56.784 [info] Python interpreter path: /bin/python
+2024-10-18 19:22:56.954 [info] > pyenv which python
+2024-10-18 19:22:56.954 [info] cwd: .
+2024-10-18 19:22:57.885 [error] [
+  'Failed to activate a workspace, Class name = v, completed in 1331ms, has a falsy return value, Arg 1: <Uri:/home/xeyossr/Documents/Coding/20Projects/Stalker/templates/index.html>, Arg 2: {"started":1729264976165}, Return Value: undefined',
+  Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+  Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+   The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+      at H (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:112:16479)
+      at Object.get testResults [as testResults] (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:39221)
+      at C.activate (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:947691)
+      at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:2457
+      at Array.map (<anonymous>)
+      at v.activateWorkspace (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:2447)
+]
+2024-10-18 19:22:57.886 [error] Failure during activation. Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+    at H (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:112:16479)
+    at Object.get testResults [as testResults] (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:39221)
+    at C.activate (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:947691)
+    at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:2457
+    at Array.map (<anonymous>)
+    at v.activateWorkspace (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:2447)
+2024-10-18 19:22:57.886 [error] sendStartupTelemetry() failed. Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+    at H (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:112:16479)
+    at Object.get testResults [as testResults] (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:39221)
+    at C.activate (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:947691)
+    at /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:2457
+    at Array.map (<anonymous>)
+    at v.activateWorkspace (/home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/out/client/extension.js:2:2447)
+2024-10-18 19:23:00.673 [info] Starting Jedi language server for Stalker.

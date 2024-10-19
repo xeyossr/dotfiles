@@ -1,0 +1,1692 @@
+{
+    "userDataProfilesMigration": true,
+    "profileAssociations": {
+        "workspaces": {},
+        "emptyWindows": {}
+    },
+    "profileAssociationsMigration": true,
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "53d167ee80c3f65ccd7589e2bc575c6e9f877bfd4f5c9a4c1810f9f92d92d84b",
+    "telemetry.devDeviceId": "4f2fa16a-b674-48e3-8020-7b1fe3accf30",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": []
+    },
+    "lastKnownMenubarData": {
+        "menus": {
+            "File": {
+                "items": [
+                    {
+                        "id": "workbench.action.files.newUntitledFile",
+                        "label": "&&Yeni Metin Dosyası"
+                    },
+                    {
+                        "id": "welcome.showNewFileEntries",
+                        "label": "Yeni Dosya..."
+                    },
+                    {
+                        "id": "workbench.action.newWindow",
+                        "label": "Yeni &&Pencere"
+                    },
+                    {
+                        "id": "submenuitem.OpenProfile",
+                        "label": "Yeni Profil Penceresi",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.profiles.actions.createProfile",
+                                    "label": "Yeni Profil..."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.files.openFile",
+                        "label": "Dosyayı &&Aç..."
+                    },
+                    {
+                        "id": "workbench.action.files.openFolder",
+                        "label": "&&Klasör Aç..."
+                    },
+                    {
+                        "id": "workbench.action.openWorkspace",
+                        "label": "Dosyadan Çalış&&ma Alanı Aç..."
+                    },
+                    {
+                        "id": "submenuitem.MenubarRecentMenu",
+                        "label": "&&Son Kullanılanları Aç",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.action.reopenClosedEditor",
+                                    "label": "&&Kapatılan Düzenleyiciyi Yeniden Aç",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentWorkspace",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/xeyossr/Documents/Coding/discipline4everyone.code-workspace",
+                                        "path": "/home/xeyossr/Documents/Coding/discipline4everyone.code-workspace",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Coding/discipline4everyone (Çalışma Alanı)"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.openRecent",
+                                    "label": "&&Diğer..."
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.clearRecentFiles",
+                                    "label": "&&Yakın Zamanda Açılanları Temizle..."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "addRootFolder",
+                        "label": "Klasörü Çalışma Alanına E&&kle..."
+                    },
+                    {
+                        "id": "workbench.action.saveWorkspaceAs",
+                        "label": "Çalışma Alanını Farklı Kaydet..."
+                    },
+                    {
+                        "id": "workbench.action.duplicateWorkspaceInNewWindow",
+                        "label": "Yinelenen Çalışma Alanı"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.files.save",
+                        "label": "&&Kaydet"
+                    },
+                    {
+                        "id": "workbench.action.files.saveAs",
+                        "label": "&&Farklı Kaydet..."
+                    },
+                    {
+                        "id": "saveAll",
+                        "label": "&&Tümünü Kaydet",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "submenuitem.MenubarShare",
+                        "label": "Paylaş",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.profiles.actions.exportProfile",
+                                    "label": "Profili Dışarı Aktar (Varsayılan)..."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.toggleAutoSave",
+                        "label": "&&Otomatik Kaydet"
+                    },
+                    {
+                        "id": "submenuitem.MenubarPreferencesMenu",
+                        "label": "&&Tercihler",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.profiles.actions.manageProfiles",
+                                    "label": "&&Profiller"
+                                },
+                                {
+                                    "id": "workbench.action.openSettings",
+                                    "label": "&&Ayarlar"
+                                },
+                                {
+                                    "id": "workbench.view.extensions",
+                                    "label": "&&Uzantılar"
+                                },
+                                {
+                                    "id": "workbench.action.openGlobalKeybindings",
+                                    "label": "Klavye Kısayolları"
+                                },
+                                {
+                                    "id": "workbench.action.openSnippets",
+                                    "label": "Kod Parçacıklarını Yapılandır"
+                                },
+                                {
+                                    "id": "workbench.action.tasks.openUserTasks",
+                                    "label": "Görevler"
+                                },
+                                {
+                                    "id": "submenuitem.ThemesSubMenu",
+                                    "label": "&&Tema",
+                                    "submenu": {
+                                        "items": [
+                                            {
+                                                "id": "workbench.action.selectTheme",
+                                                "label": "Renk Teması"
+                                            },
+                                            {
+                                                "id": "workbench.action.selectIconTheme",
+                                                "label": "Dosya Simgesi Teması"
+                                            },
+                                            {
+                                                "id": "workbench.action.selectProductIconTheme",
+                                                "label": "Ürün Simgesi Teması"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "settings.filterByOnline",
+                                    "label": "&&Çevrimiçi Hizmet Ayarları"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.files.revert",
+                        "label": "Dosyayı &&Geri Al"
+                    },
+                    {
+                        "id": "workbench.action.closeActiveEditor",
+                        "label": "Düzenleyiciyi &&Kapat"
+                    },
+                    {
+                        "id": "workbench.action.closeFolder",
+                        "label": "&&Klasörü Kapat"
+                    },
+                    {
+                        "id": "workbench.action.closeWindow",
+                        "label": "Pencereyi Kapa&&t"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.quit",
+                        "label": "Çı&&kış"
+                    }
+                ]
+            },
+            "Edit": {
+                "items": [
+                    {
+                        "id": "undo",
+                        "label": "&&Geri Al"
+                    },
+                    {
+                        "id": "redo",
+                        "label": "&&Yinele"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.clipboardCutAction",
+                        "label": "&&Kes"
+                    },
+                    {
+                        "id": "editor.action.clipboardCopyAction",
+                        "label": "&&Kopyala"
+                    },
+                    {
+                        "id": "editor.action.clipboardPasteAction",
+                        "label": "&&Yapıştır"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "actions.find",
+                        "label": "&&Bul"
+                    },
+                    {
+                        "id": "editor.action.startFindReplaceAction",
+                        "label": "&&Değiştir"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.findInFiles",
+                        "label": "Dosyalarda &&Bul"
+                    },
+                    {
+                        "id": "workbench.action.replaceInFiles",
+                        "label": "Dosyalarda Değiştir"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.commentLine",
+                        "label": "&&Satır Açıklamasını Aç/Kapat"
+                    },
+                    {
+                        "id": "editor.action.blockComment",
+                        "label": "&&Blok Açıklamasını Aç/Kapat"
+                    },
+                    {
+                        "id": "editor.emmet.action.expandAbbreviation",
+                        "label": "Emmet: Kısaltmayı Geniş&&let"
+                    }
+                ]
+            },
+            "Selection": {
+                "items": [
+                    {
+                        "id": "editor.action.selectAll",
+                        "label": "&&Tümünü Seç"
+                    },
+                    {
+                        "id": "editor.action.smartSelect.expand",
+                        "label": "&&Seçimi Genişlet"
+                    },
+                    {
+                        "id": "editor.action.smartSelect.shrink",
+                        "label": "&&Seçimi Küçült"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.copyLinesUpAction",
+                        "label": "&&Satırı Yukarı Kopyala"
+                    },
+                    {
+                        "id": "editor.action.copyLinesDownAction",
+                        "label": "Satırı Aşağı K&&opyala"
+                    },
+                    {
+                        "id": "editor.action.moveLinesUpAction",
+                        "label": "Satırı Y&&ukarı Taşı"
+                    },
+                    {
+                        "id": "editor.action.moveLinesDownAction",
+                        "label": "Satırı &&Aşağı Taşı"
+                    },
+                    {
+                        "id": "editor.action.duplicateSelection",
+                        "label": "&&Seçimi Çoğalt"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.insertCursorAbove",
+                        "label": "&&Yukarıdaki İmleci Ekle"
+                    },
+                    {
+                        "id": "editor.action.insertCursorBelow",
+                        "label": "&&Aşağıya İmleç Ekle"
+                    },
+                    {
+                        "id": "editor.action.insertCursorAtEndOfEachLineSelected",
+                        "label": "İ&&mleçleri Satır Sonlarına Ekle"
+                    },
+                    {
+                        "id": "editor.action.addSelectionToNextFindMatch",
+                        "label": "S&&onraki Oluşumu Ekle"
+                    },
+                    {
+                        "id": "editor.action.addSelectionToPreviousFindMatch",
+                        "label": "Ö&&nceki Oluşumu Ekle"
+                    },
+                    {
+                        "id": "editor.action.selectHighlights",
+                        "label": "Tüm &&Oluşumları Seç"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.toggleMultiCursorModifier",
+                        "label": "Çoklu İmleç için Ctrl tuşuna basıp tıklamaya geçin"
+                    },
+                    {
+                        "id": "editor.action.toggleColumnSelection",
+                        "label": "Sütun &&Seçimi Modu"
+                    }
+                ]
+            },
+            "View": {
+                "items": [
+                    {
+                        "id": "workbench.action.showCommands",
+                        "label": "&&Komut Paleti..."
+                    },
+                    {
+                        "id": "workbench.action.openView",
+                        "label": "&&Görünümü Aç..."
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "submenuitem.MenubarAppearanceMenu",
+                        "label": "&&Görünüm",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.action.toggleFullScreen",
+                                    "label": "&&Tam Ekran"
+                                },
+                                {
+                                    "id": "workbench.action.toggleZenMode",
+                                    "label": "Zen Modu"
+                                },
+                                {
+                                    "id": "workbench.action.toggleCenteredLayout",
+                                    "label": "&&Ortalanmış Düzen"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.toggleMenuBar",
+                                    "label": "Menü &&Çubuğu"
+                                },
+                                {
+                                    "id": "workbench.action.toggleSidebarVisibility",
+                                    "label": "&&Birincil Kenar Çubuğu",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "workbench.action.toggleAuxiliaryBar",
+                                    "label": "İkincil Ke&&nar Çubuğu"
+                                },
+                                {
+                                    "id": "workbench.action.toggleStatusbarVisibility",
+                                    "label": "D&&urum Çubuğu"
+                                },
+                                {
+                                    "id": "workbench.action.togglePanel",
+                                    "label": "&&Panel"
+                                },
+                                {
+                                    "id": "toggle.toggleCustomTitleBar",
+                                    "label": "Özel Başlık Çubuğu"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.toggleSidebarPosition",
+                                    "label": "&&Birincil Kenar Çubuğunu Sağa Taşı"
+                                },
+                                {
+                                    "id": "submenuitem.ActivityBarPositionMenu",
+                                    "label": "Etkinlik Çubuğu Pozisyonu",
+                                    "submenu": {
+                                        "items": [
+                                            {
+                                                "id": "workbench.action.activityBarLocation.default",
+                                                "label": "&&Varsayılan",
+                                                "checked": true
+                                            },
+                                            {
+                                                "id": "workbench.action.activityBarLocation.top",
+                                                "label": "&&Üst"
+                                            },
+                                            {
+                                                "id": "workbench.action.activityBarLocation.bottom",
+                                                "label": "&&Alt"
+                                            },
+                                            {
+                                                "id": "workbench.action.activityBarLocation.hide",
+                                                "label": "&&Gizli"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "submenuitem.PanelPositionMenu",
+                                    "label": "Panel Konumu",
+                                    "submenu": {
+                                        "items": [
+                                            {
+                                                "id": "workbench.action.positionPanelTop",
+                                                "label": "Üst"
+                                            },
+                                            {
+                                                "id": "workbench.action.positionPanelLeft",
+                                                "label": "Sol"
+                                            },
+                                            {
+                                                "id": "workbench.action.positionPanelRight",
+                                                "label": "Sağ"
+                                            },
+                                            {
+                                                "id": "workbench.action.positionPanelBottom",
+                                                "label": "Alt",
+                                                "checked": true
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "submenuitem.PanelAlignmentMenu",
+                                    "label": "Paneli Hizala",
+                                    "submenu": {
+                                        "items": [
+                                            {
+                                                "id": "workbench.action.alignPanelJustify",
+                                                "label": "İki Yana Yasla"
+                                            },
+                                            {
+                                                "id": "workbench.action.alignPanelCenter",
+                                                "label": "Ortala",
+                                                "checked": true
+                                            },
+                                            {
+                                                "id": "workbench.action.alignPanelRight",
+                                                "label": "Sağ"
+                                            },
+                                            {
+                                                "id": "workbench.action.alignPanelLeft",
+                                                "label": "Sol"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "submenuitem.EditorTabsBarShowTabsSubmenu",
+                                    "label": "Sekme Çubuğu",
+                                    "submenu": {
+                                        "items": [
+                                            {
+                                                "id": "workbench.action.showMultipleEditorTabs",
+                                                "label": "Birden Çok Sekme",
+                                                "checked": true
+                                            },
+                                            {
+                                                "id": "workbench.action.showEditorTab",
+                                                "label": "Tek Sekme"
+                                            },
+                                            {
+                                                "id": "workbench.action.hideEditorTabs",
+                                                "label": "Gizli"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "submenuitem.EditorActionsPositionSubmenu",
+                                    "label": "Düzenleyici Eylemleri Konumu",
+                                    "submenu": {
+                                        "items": [
+                                            {
+                                                "id": "workbench.action.editorActionsDefault",
+                                                "label": "Sekme Çubuğu",
+                                                "checked": true
+                                            },
+                                            {
+                                                "id": "workbench.action.editorActionsTitleBar",
+                                                "label": "Başlık Çubuğu"
+                                            },
+                                            {
+                                                "id": "workbench.action.hideEditorActions",
+                                                "label": "Gizli"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "editor.action.toggleMinimap",
+                                    "label": "&&Mini Harita",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "breadcrumbs.toggle",
+                                    "label": "İçerik &&Haritalarını Aç/Kapat",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "editor.action.toggleStickyScroll",
+                                    "label": "&&Yapışkan Kaydırma",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "editor.action.toggleRenderWhitespace",
+                                    "label": "&&Boşluk Oluştur",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "editor.action.toggleRenderControlCharacter",
+                                    "label": "&&Denetim Karakterlerini İşle",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.zoomIn",
+                                    "label": "&&Yakınlaştır"
+                                },
+                                {
+                                    "id": "workbench.action.zoomOut",
+                                    "label": "&&Uzaklaştır"
+                                },
+                                {
+                                    "id": "workbench.action.zoomReset",
+                                    "label": "&&Yakınlaştırmayı Sıfırla"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "submenuitem.MenubarLayoutMenu",
+                        "label": "Düzenleyici &&Düzeni",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.action.splitEditorUp",
+                                    "label": "&&Yukarıya Böl"
+                                },
+                                {
+                                    "id": "workbench.action.splitEditorDown",
+                                    "label": "&&Aşağıya Böl"
+                                },
+                                {
+                                    "id": "workbench.action.splitEditorLeft",
+                                    "label": "&&Sola Böl"
+                                },
+                                {
+                                    "id": "workbench.action.splitEditorRight",
+                                    "label": "&&Sağa Böl"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.splitEditorInGroup",
+                                    "label": "&&Gruba Böl"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.moveEditorToNewWindow",
+                                    "label": "&&Düzenleyiciyi Yeni Pencereye Taşı"
+                                },
+                                {
+                                    "id": "workbench.action.copyEditorToNewWindow",
+                                    "label": "&&Düzenleyiciyi Yeni Pencereye Kopyala"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutSingle",
+                                    "label": "&&Tek"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutTwoColumns",
+                                    "label": "&&İki Sütun"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutThreeColumns",
+                                    "label": "Üç &&Sütun"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutTwoRows",
+                                    "label": "İ&&ki Satır"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutThreeRows",
+                                    "label": "Üç &&Satır"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutTwoByTwoGrid",
+                                    "label": "&&Kılavuz (2x2)"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutTwoRowsRight",
+                                    "label": "Sağda İki S&&atır"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutTwoColumnsBottom",
+                                    "label": "Altta İki &&Sütun"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.toggleEditorGroupLayout",
+                                    "label": "&&Düzeni Çevir"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.view.explorer",
+                        "label": "&&Gezgin"
+                    },
+                    {
+                        "id": "workbench.view.search",
+                        "label": "&&Ara"
+                    },
+                    {
+                        "id": "workbench.view.scm",
+                        "label": "Kaynak &&Denetimi"
+                    },
+                    {
+                        "id": "workbench.view.debug",
+                        "label": "&&Çalıştır"
+                    },
+                    {
+                        "id": "workbench.view.extensions",
+                        "label": "&&Uzantılar"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.actions.view.problems",
+                        "label": "&&Sorunlar"
+                    },
+                    {
+                        "id": "workbench.action.output.toggleOutput",
+                        "label": "&&Çıkış"
+                    },
+                    {
+                        "id": "workbench.debug.action.toggleRepl",
+                        "label": "H&&ata Ayıklama Konsolu"
+                    },
+                    {
+                        "id": "workbench.action.terminal.toggleTerminal",
+                        "label": "&&Terminal"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.toggleWordWrap",
+                        "label": "&&Sözcük Kaydır",
+                        "checked": true
+                    }
+                ]
+            },
+            "Go": {
+                "items": [
+                    {
+                        "id": "workbench.action.navigateBack",
+                        "label": "&&Geri"
+                    },
+                    {
+                        "id": "workbench.action.navigateForward",
+                        "label": "&&İleri",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.navigateToLastEditLocation",
+                        "label": "&&Son Düzenleme Konumu"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "submenuitem.MenubarSwitchEditorMenu",
+                        "label": "&&Düzenleyiciyi Değiştir",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.action.nextEditor",
+                                    "label": "&&Sonraki Düzenleyici"
+                                },
+                                {
+                                    "id": "workbench.action.previousEditor",
+                                    "label": "&&Önceki Düzenleyici"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.openNextRecentlyUsedEditor",
+                                    "label": "&&Kullanılan Sonraki Düzenleyici"
+                                },
+                                {
+                                    "id": "workbench.action.openPreviousRecentlyUsedEditor",
+                                    "label": "&&Kullanılan Önceki Düzenleyici"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.nextEditorInGroup",
+                                    "label": "&&Gruptaki Sonraki Düzenleyici"
+                                },
+                                {
+                                    "id": "workbench.action.previousEditorInGroup",
+                                    "label": "&&Gruptaki Önceki Düzenleyici"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.openNextRecentlyUsedEditorInGroup",
+                                    "label": "&&Grupta Kullanılan Sonraki Düzenleyici"
+                                },
+                                {
+                                    "id": "workbench.action.openPreviousRecentlyUsedEditorInGroup",
+                                    "label": "&&Grupta Kullanılan Önceki Düzenleyici"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "submenuitem.MenubarSwitchGroupMenu",
+                        "label": "&&Grubu Değiştir",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.action.focusFirstEditorGroup",
+                                    "label": "&&1. Grup"
+                                },
+                                {
+                                    "id": "workbench.action.focusSecondEditorGroup",
+                                    "label": "&&2. Grup"
+                                },
+                                {
+                                    "id": "workbench.action.focusThirdEditorGroup",
+                                    "label": "&&3. Grup",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusFourthEditorGroup",
+                                    "label": "&&4. Grup",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusFifthEditorGroup",
+                                    "label": "&&5. Grup",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.focusNextGroup",
+                                    "label": "&&Sonraki Grup",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusPreviousGroup",
+                                    "label": "&&Önceki Grup",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.focusLeftGroup",
+                                    "label": "&&Soldaki Grup",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusRightGroup",
+                                    "label": "&&Sağdaki Grup",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusAboveGroup",
+                                    "label": "&&Yukarıdaki Grup",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusBelowGroup",
+                                    "label": "&&Aşağıdaki Grup",
+                                    "enabled": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.quickOpen",
+                        "label": "&&Dosyaya Git..."
+                    },
+                    {
+                        "id": "workbench.action.showAllSymbols",
+                        "label": "&&Çalışma Alanında Sembole Git..."
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.gotoSymbol",
+                        "label": "Düzenleyicide &&Sembole Git..."
+                    },
+                    {
+                        "id": "editor.action.revealDefinition",
+                        "label": "&&Tanıma Git"
+                    },
+                    {
+                        "id": "editor.action.revealDeclaration",
+                        "label": "&&Bildirime Git"
+                    },
+                    {
+                        "id": "editor.action.goToTypeDefinition",
+                        "label": "&&Tür Tanımına Git"
+                    },
+                    {
+                        "id": "editor.action.goToImplementation",
+                        "label": "&&Uygulamalara Git"
+                    },
+                    {
+                        "id": "editor.action.goToReferences",
+                        "label": "&&Başvurulara Git"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.gotoLine",
+                        "label": "&&Satıra/Sütuna Git..."
+                    },
+                    {
+                        "id": "editor.action.jumpToBracket",
+                        "label": "&&Köşeli Ayraca Git"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.marker.nextInFiles",
+                        "label": "Sonraki &&Sorun"
+                    },
+                    {
+                        "id": "editor.action.marker.prevInFiles",
+                        "label": "Önceki &&Sorun"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.dirtydiff.next",
+                        "label": "Sonraki &&Değişiklik"
+                    },
+                    {
+                        "id": "editor.action.dirtydiff.previous",
+                        "label": "Önceki &&Değişiklik"
+                    }
+                ]
+            },
+            "Run": {
+                "items": [
+                    {
+                        "id": "workbench.action.debug.start",
+                        "label": "&&Hata Ayıklamayı Başlat"
+                    },
+                    {
+                        "id": "workbench.action.debug.run",
+                        "label": "&&Hata Ayıklama Olmadan Çalıştır"
+                    },
+                    {
+                        "id": "workbench.action.debug.stop",
+                        "label": "&&Hata Ayıklamayı Durdur",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.restart",
+                        "label": "&&Hata Ayıklamayı Yeniden Başlat",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.debug.configure",
+                        "label": "&&Yapılandırmaları Aç",
+                        "enabled": false
+                    },
+                    {
+                        "id": "debug.addConfiguration",
+                        "label": "Y&&apılandırma Ekle..."
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.debug.stepOver",
+                        "label": "Üzerinden &&Adımla",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.stepInto",
+                        "label": "&&Adımla",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.stepOut",
+                        "label": "Dışarı A&&dımla",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.continue",
+                        "label": "&&Devam",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.debug.action.toggleBreakpoint",
+                        "label": "&&Kesme Noktasını Aç/Kapat"
+                    },
+                    {
+                        "id": "submenuitem.MenubarNewBreakpointMenu",
+                        "label": "&&Yeni Kesme Noktası",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "editor.debug.action.editBreakpoint",
+                                    "label": "&&Kesme Noktasını Düzenle"
+                                },
+                                {
+                                    "id": "editor.debug.action.conditionalBreakpoint",
+                                    "label": "&&Koşullu Kesme Noktası..."
+                                },
+                                {
+                                    "id": "editor.debug.action.toggleInlineBreakpoint",
+                                    "label": "Satır içi Kesme N&&oktası"
+                                },
+                                {
+                                    "id": "workbench.debug.viewlet.action.addFunctionBreakpointAction",
+                                    "label": "&&İşlev Kesme Noktası..."
+                                },
+                                {
+                                    "id": "editor.debug.action.addLogPoint",
+                                    "label": "&&Günlüğe Kaydetme Noktası..."
+                                },
+                                {
+                                    "id": "editor.debug.action.triggerByBreakpoint",
+                                    "label": "&Tetiklenen Kesme Noktası..."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.debug.viewlet.action.enableAllBreakpoints",
+                        "label": "&&Tüm Kesme Noktalarını Etkinleştir"
+                    },
+                    {
+                        "id": "workbench.debug.viewlet.action.disableAllBreakpoints",
+                        "label": "Tüm K&&esme Noktalarını Devre Dışı Bırak"
+                    },
+                    {
+                        "id": "workbench.debug.viewlet.action.removeAllBreakpoints",
+                        "label": "Tüm &&Kesme Noktalarını Kaldır"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "debug.installAdditionalDebuggers",
+                        "label": "&&Ek Hata Ayıklayıcılarını Yükle..."
+                    }
+                ]
+            },
+            "Terminal": {
+                "items": [
+                    {
+                        "id": "workbench.action.terminal.new",
+                        "label": "&&Yeni Terminal"
+                    },
+                    {
+                        "id": "workbench.action.terminal.split",
+                        "label": "&&Terminali Böl",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.tasks.runTask",
+                        "label": "&&Görevi Çalıştır..."
+                    },
+                    {
+                        "id": "workbench.action.tasks.build",
+                        "label": "&&Derleme Görevini Çalıştır..."
+                    },
+                    {
+                        "id": "workbench.action.terminal.runActiveFile",
+                        "label": "&&Etkin Dosyayı Çalıştır"
+                    },
+                    {
+                        "id": "workbench.action.terminal.runSelectedText",
+                        "label": "&&Seçili Metni Çalıştır"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.tasks.showTasks",
+                        "label": "Ça&&lışan Görevleri Göster...",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.tasks.restartTask",
+                        "label": "Çalışan Görevi &&Yeniden Başlat...",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.tasks.terminate",
+                        "label": "&&Görevi Sonlandır...",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.tasks.configureTaskRunner",
+                        "label": "&&Görevleri Yapılandır..."
+                    },
+                    {
+                        "id": "workbench.action.tasks.configureDefaultBuildTask",
+                        "label": "&&Varsayılan Derleme Görevini Yapılandır..."
+                    }
+                ]
+            },
+            "Help": {
+                "items": [
+                    {
+                        "id": "workbench.action.openWalkthrough",
+                        "label": "Hoş Geldiniz"
+                    },
+                    {
+                        "id": "workbench.action.showCommands",
+                        "label": "Tüm Komutları Göster"
+                    },
+                    {
+                        "id": "workbench.action.openDocumentationUrl",
+                        "label": "&&Belgeler"
+                    },
+                    {
+                        "id": "workbench.action.showInteractivePlayground",
+                        "label": "Düzenleyici Deneme Ala&&nı"
+                    },
+                    {
+                        "id": "workbench.action.getStartedWithAccessibilityFeatures",
+                        "label": "Get Started with Accessibility Features"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.keybindingsReference",
+                        "label": "&&Klavye Kısayolları Başvurusu"
+                    },
+                    {
+                        "id": "workbench.action.openVideoTutorialsUrl",
+                        "label": "&&Video Öğreticileri"
+                    },
+                    {
+                        "id": "workbench.action.openTipsAndTricksUrl",
+                        "label": "İpuçları ve Püf No&&ktaları"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.openRequestFeatureUrl",
+                        "label": "Özellik İ&&steklerinde Ara"
+                    },
+                    {
+                        "id": "workbench.action.openIssueReporter",
+                        "label": "&&Sorun Raporla (İngilizce)"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.openLicenseUrl",
+                        "label": "Lisansı &&Görüntüle"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.toggleDevTools",
+                        "label": "Geliştirici Araçlarını Aç/Kapat"
+                    },
+                    {
+                        "id": "workbench.action.openProcessExplorer",
+                        "label": "&&İşlem Gezginini Aç"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.showAboutDialog",
+                        "label": "&&Hakkında"
+                    }
+                ]
+            }
+        },
+        "keybindings": {
+            "workbench.action.files.newUntitledFile": {
+                "label": "Ctrl+N",
+                "userSettingsLabel": "ctrl+n"
+            },
+            "welcome.showNewFileEntries": {
+                "label": "Ctrl+Alt+Super+N",
+                "userSettingsLabel": "ctrl+alt+meta+n"
+            },
+            "workbench.action.newWindow": {
+                "label": "Ctrl+Shift+N",
+                "userSettingsLabel": "ctrl+shift+n"
+            },
+            "workbench.action.files.openFile": {
+                "label": "Ctrl+O",
+                "userSettingsLabel": "ctrl+o"
+            },
+            "workbench.action.files.openFolder": {
+                "label": "Ctrl+K Ctrl+O",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+o"
+            },
+            "workbench.action.reopenClosedEditor": {
+                "label": "Ctrl+Shift+T",
+                "userSettingsLabel": "ctrl+shift+t"
+            },
+            "workbench.action.openRecent": {
+                "label": "Ctrl+R",
+                "userSettingsLabel": "ctrl+r"
+            },
+            "workbench.action.files.save": {
+                "label": "Ctrl+S",
+                "userSettingsLabel": "ctrl+s"
+            },
+            "workbench.action.files.saveAs": {
+                "label": "Ctrl+Shift+S",
+                "userSettingsLabel": "ctrl+shift+s"
+            },
+            "workbench.action.openSettings": {
+                "label": "Ctrl+,",
+                "userSettingsLabel": "ctrl+,"
+            },
+            "workbench.view.extensions": {
+                "label": "Ctrl+Shift+X",
+                "userSettingsLabel": "ctrl+shift+x"
+            },
+            "workbench.action.openGlobalKeybindings": {
+                "label": "Ctrl+K Ctrl+S",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+s"
+            },
+            "workbench.action.selectTheme": {
+                "label": "Ctrl+K Ctrl+T",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+t"
+            },
+            "workbench.action.closeActiveEditor": {
+                "label": "Ctrl+W",
+                "userSettingsLabel": "ctrl+w"
+            },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
+            },
+            "workbench.action.closeWindow": {
+                "label": "Alt+F4",
+                "userSettingsLabel": "alt+f4"
+            },
+            "workbench.action.quit": {
+                "label": "Ctrl+Q",
+                "userSettingsLabel": "ctrl+q"
+            },
+            "undo": {
+                "label": "Ctrl+Z",
+                "userSettingsLabel": "ctrl+z"
+            },
+            "redo": {
+                "label": "Ctrl+Y",
+                "userSettingsLabel": "ctrl+y"
+            },
+            "editor.action.clipboardCutAction": {
+                "label": "Ctrl+X",
+                "userSettingsLabel": "ctrl+x"
+            },
+            "editor.action.clipboardCopyAction": {
+                "label": "Ctrl+C",
+                "userSettingsLabel": "ctrl+c"
+            },
+            "editor.action.clipboardPasteAction": {
+                "label": "Ctrl+V",
+                "userSettingsLabel": "ctrl+v"
+            },
+            "actions.find": {
+                "label": "Ctrl+F",
+                "userSettingsLabel": "ctrl+f"
+            },
+            "editor.action.startFindReplaceAction": {
+                "label": "Ctrl+H",
+                "userSettingsLabel": "ctrl+h"
+            },
+            "workbench.action.findInFiles": {
+                "label": "Ctrl+Shift+F",
+                "userSettingsLabel": "ctrl+shift+f"
+            },
+            "workbench.action.replaceInFiles": {
+                "label": "Ctrl+Shift+H",
+                "userSettingsLabel": "ctrl+shift+h"
+            },
+            "editor.action.commentLine": {
+                "label": "Ctrl+/",
+                "userSettingsLabel": "ctrl+/"
+            },
+            "editor.action.blockComment": {
+                "label": "Ctrl+Shift+A",
+                "userSettingsLabel": "ctrl+shift+a"
+            },
+            "editor.emmet.action.expandAbbreviation": {
+                "label": "Tab",
+                "userSettingsLabel": "tab"
+            },
+            "editor.action.selectAll": {
+                "label": "Ctrl+A",
+                "userSettingsLabel": "ctrl+a"
+            },
+            "editor.action.smartSelect.expand": {
+                "label": "Shift+Alt+Right",
+                "userSettingsLabel": "shift+alt+right"
+            },
+            "editor.action.smartSelect.shrink": {
+                "label": "Shift+Alt+Left",
+                "userSettingsLabel": "shift+alt+left"
+            },
+            "editor.action.copyLinesUpAction": {
+                "label": "Ctrl+Shift+Alt+Up",
+                "userSettingsLabel": "ctrl+shift+alt+up"
+            },
+            "editor.action.copyLinesDownAction": {
+                "label": "Ctrl+Shift+Alt+Down",
+                "userSettingsLabel": "ctrl+shift+alt+down"
+            },
+            "editor.action.moveLinesUpAction": {
+                "label": "Alt+Up",
+                "userSettingsLabel": "alt+up"
+            },
+            "editor.action.moveLinesDownAction": {
+                "label": "Alt+Down",
+                "userSettingsLabel": "alt+down"
+            },
+            "editor.action.insertCursorAbove": {
+                "label": "Shift+Alt+Up",
+                "userSettingsLabel": "shift+alt+up"
+            },
+            "editor.action.insertCursorBelow": {
+                "label": "Shift+Super+I",
+                "userSettingsLabel": "shift+meta+i"
+            },
+            "editor.action.insertCursorAtEndOfEachLineSelected": {
+                "label": "Shift+Alt+I",
+                "userSettingsLabel": "shift+alt+i"
+            },
+            "editor.action.addSelectionToNextFindMatch": {
+                "label": "Ctrl+D",
+                "userSettingsLabel": "ctrl+d"
+            },
+            "editor.action.selectHighlights": {
+                "label": "Ctrl+Shift+L",
+                "userSettingsLabel": "ctrl+shift+l"
+            },
+            "workbench.action.showCommands": {
+                "label": "Ctrl+Shift+P",
+                "userSettingsLabel": "ctrl+shift+p"
+            },
+            "workbench.action.toggleFullScreen": {
+                "label": "F11",
+                "userSettingsLabel": "f11"
+            },
+            "workbench.action.toggleZenMode": {
+                "label": "Ctrl+K Z",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k z"
+            },
+            "workbench.action.toggleSidebarVisibility": {
+                "label": "Ctrl+B",
+                "userSettingsLabel": "ctrl+b"
+            },
+            "workbench.action.toggleAuxiliaryBar": {
+                "label": "Ctrl+Alt+B",
+                "userSettingsLabel": "ctrl+alt+b"
+            },
+            "workbench.action.togglePanel": {
+                "label": "Ctrl+J",
+                "userSettingsLabel": "ctrl+j"
+            },
+            "workbench.action.zoomIn": {
+                "label": "Ctrl+=",
+                "userSettingsLabel": "ctrl+="
+            },
+            "workbench.action.zoomOut": {
+                "label": "Ctrl+-",
+                "userSettingsLabel": "ctrl+-"
+            },
+            "workbench.action.zoomReset": {
+                "label": "Ctrl+NumPad0",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+numpad0"
+            },
+            "workbench.action.splitEditorUp": {
+                "label": "Ctrl+K Ctrl+\\",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+\\"
+            },
+            "workbench.action.splitEditorInGroup": {
+                "label": "Ctrl+K Ctrl+Shift+\\",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
+            },
+            "workbench.action.copyEditorToNewWindow": {
+                "label": "Ctrl+K O",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k o"
+            },
+            "workbench.action.toggleEditorGroupLayout": {
+                "label": "Shift+Alt+0",
+                "userSettingsLabel": "shift+alt+0"
+            },
+            "workbench.view.explorer": {
+                "label": "Ctrl+Shift+E",
+                "userSettingsLabel": "ctrl+shift+e"
+            },
+            "workbench.view.search": {
+                "label": "Ctrl+Shift+F",
+                "userSettingsLabel": "ctrl+shift+f"
+            },
+            "workbench.view.scm": {
+                "label": "Ctrl+Shift+G",
+                "userSettingsLabel": "ctrl+shift+g"
+            },
+            "workbench.view.debug": {
+                "label": "Ctrl+Shift+D",
+                "userSettingsLabel": "ctrl+shift+d"
+            },
+            "workbench.actions.view.problems": {
+                "label": "Ctrl+Shift+M",
+                "userSettingsLabel": "ctrl+shift+m"
+            },
+            "workbench.action.output.toggleOutput": {
+                "label": "Ctrl+K Ctrl+H",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+h"
+            },
+            "workbench.debug.action.toggleRepl": {
+                "label": "Ctrl+Shift+Y",
+                "userSettingsLabel": "ctrl+shift+y"
+            },
+            "workbench.action.terminal.toggleTerminal": {
+                "label": "Ctrl+`",
+                "userSettingsLabel": "ctrl+`"
+            },
+            "editor.action.toggleWordWrap": {
+                "label": "Alt+Z",
+                "userSettingsLabel": "alt+z"
+            },
+            "workbench.action.navigateBack": {
+                "label": "Ctrl+Alt+-",
+                "userSettingsLabel": "ctrl+alt+-"
+            },
+            "workbench.action.navigateForward": {
+                "label": "Ctrl+Shift+-",
+                "userSettingsLabel": "ctrl+shift+-"
+            },
+            "workbench.action.navigateToLastEditLocation": {
+                "label": "Ctrl+K Ctrl+Q",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+q"
+            },
+            "workbench.action.nextEditor": {
+                "label": "Ctrl+PageDown",
+                "userSettingsLabel": "ctrl+pagedown"
+            },
+            "workbench.action.previousEditor": {
+                "label": "Ctrl+PageUp",
+                "userSettingsLabel": "ctrl+pageup"
+            },
+            "workbench.action.nextEditorInGroup": {
+                "label": "Ctrl+K Ctrl+PageDown",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+pagedown"
+            },
+            "workbench.action.previousEditorInGroup": {
+                "label": "Ctrl+K Ctrl+PageUp",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+pageup"
+            },
+            "workbench.action.focusFirstEditorGroup": {
+                "label": "Ctrl+1",
+                "userSettingsLabel": "ctrl+1"
+            },
+            "workbench.action.focusSecondEditorGroup": {
+                "label": "Ctrl+2",
+                "userSettingsLabel": "ctrl+2"
+            },
+            "workbench.action.focusThirdEditorGroup": {
+                "label": "Ctrl+3",
+                "userSettingsLabel": "ctrl+3"
+            },
+            "workbench.action.focusFourthEditorGroup": {
+                "label": "Ctrl+4",
+                "userSettingsLabel": "ctrl+4"
+            },
+            "workbench.action.focusFifthEditorGroup": {
+                "label": "Ctrl+5",
+                "userSettingsLabel": "ctrl+5"
+            },
+            "workbench.action.focusLeftGroup": {
+                "label": "Ctrl+K Ctrl+LeftArrow",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+left"
+            },
+            "workbench.action.focusRightGroup": {
+                "label": "Ctrl+K Ctrl+RightArrow",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+right"
+            },
+            "workbench.action.focusAboveGroup": {
+                "label": "Ctrl+K Ctrl+UpArrow",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+up"
+            },
+            "workbench.action.focusBelowGroup": {
+                "label": "Ctrl+K Ctrl+DownArrow",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+down"
+            },
+            "workbench.action.quickOpen": {
+                "label": "Ctrl+P",
+                "userSettingsLabel": "ctrl+p"
+            },
+            "workbench.action.showAllSymbols": {
+                "label": "Ctrl+T",
+                "userSettingsLabel": "ctrl+t"
+            },
+            "workbench.action.gotoSymbol": {
+                "label": "Ctrl+Shift+O",
+                "userSettingsLabel": "ctrl+shift+o"
+            },
+            "editor.action.revealDefinition": {
+                "label": "F12",
+                "userSettingsLabel": "f12"
+            },
+            "editor.action.goToImplementation": {
+                "label": "Ctrl+F12",
+                "userSettingsLabel": "ctrl+f12"
+            },
+            "editor.action.goToReferences": {
+                "label": "Shift+F12",
+                "userSettingsLabel": "shift+f12"
+            },
+            "workbench.action.gotoLine": {
+                "label": "Ctrl+G",
+                "userSettingsLabel": "ctrl+g"
+            },
+            "editor.action.jumpToBracket": {
+                "label": "Ctrl+Shift+\\",
+                "userSettingsLabel": "ctrl+shift+\\"
+            },
+            "editor.action.marker.nextInFiles": {
+                "label": "F8",
+                "userSettingsLabel": "f8"
+            },
+            "editor.action.marker.prevInFiles": {
+                "label": "Shift+F8",
+                "userSettingsLabel": "shift+f8"
+            },
+            "editor.action.dirtydiff.next": {
+                "label": "Alt+F3",
+                "userSettingsLabel": "alt+f3"
+            },
+            "editor.action.dirtydiff.previous": {
+                "label": "Shift+Alt+F3",
+                "userSettingsLabel": "shift+alt+f3"
+            },
+            "workbench.action.debug.start": {
+                "label": "F5",
+                "userSettingsLabel": "f5"
+            },
+            "workbench.action.debug.run": {
+                "label": "Ctrl+F5",
+                "userSettingsLabel": "ctrl+f5"
+            },
+            "workbench.action.debug.stop": {
+                "label": "Shift+F5",
+                "userSettingsLabel": "shift+f5"
+            },
+            "workbench.action.debug.restart": {
+                "label": "Ctrl+Shift+F5",
+                "userSettingsLabel": "ctrl+shift+f5"
+            },
+            "workbench.action.debug.stepOver": {
+                "label": "F10",
+                "userSettingsLabel": "f10"
+            },
+            "workbench.action.debug.stepInto": {
+                "label": "F11",
+                "userSettingsLabel": "f11"
+            },
+            "workbench.action.debug.stepOut": {
+                "label": "Shift+F11",
+                "userSettingsLabel": "shift+f11"
+            },
+            "workbench.action.debug.continue": {
+                "label": "F5",
+                "userSettingsLabel": "f5"
+            },
+            "editor.debug.action.toggleBreakpoint": {
+                "label": "F9",
+                "userSettingsLabel": "f9"
+            },
+            "editor.debug.action.toggleInlineBreakpoint": {
+                "label": "Shift+F9",
+                "userSettingsLabel": "shift+f9"
+            },
+            "workbench.action.terminal.new": {
+                "label": "Ctrl+Shift+`",
+                "userSettingsLabel": "ctrl+shift+`"
+            },
+            "workbench.action.terminal.split": {
+                "label": "Ctrl+Shift+5",
+                "userSettingsLabel": "ctrl+shift+5"
+            },
+            "workbench.action.tasks.build": {
+                "label": "Ctrl+Shift+B",
+                "userSettingsLabel": "ctrl+shift+b"
+            },
+            "workbench.action.keybindingsReference": {
+                "label": "Ctrl+K Ctrl+R",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+r"
+            },
+            "workbench.action.toggleDevTools": {
+                "label": "Ctrl+Shift+I",
+                "userSettingsLabel": "ctrl+shift+i"
+            }
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        }
+    },
+    "windowsState": {
+        "lastPluginDevelopmentHostWindow": {
+            "folder": "file:///home/xeyossr/Documents/GitHub/dotfiles",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 683,
+                "height": 740
+            }
+        },
+        "openedWindows": []
+    }
+}

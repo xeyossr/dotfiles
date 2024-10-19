@@ -1,0 +1,80 @@
+2024-10-19 11:35:49.958 [info] Started local extension host with pid 67072.
+2024-10-19 11:35:52.203 [error] Error scanning extensions at /$HOME/.vscode-oss/extensions/undefined_publisher.wallbash-0.0.1: Var olmayan '/$HOME/.vscode-oss/extensions/undefined_publisher.wallbash-0.0.1' dosyası çözümlenemiyor
+2024-10-19 11:35:52.209 [error] Extension 'ms-python.debugpy CANNOT USE these API proposals 'portsAttributes, contribIssueReporter, debugVisualization, contribViewsWelcome'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2024-10-19 11:35:52.212 [error] Extension 'ms-python.python CANNOT USE these API proposals 'contribEditorContentMenu, quickPickSortByLabel, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, contribIssueReporter, codeActionAI, notebookReplDocument, notebookVariableProvider'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2024-10-19 11:35:52.378 [error] [ms-python.debugpy]: issue/reporter önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribIssueReporter"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.debugpy komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 11:35:52.379 [error] [ms-python.python]: issue/reporter önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribIssueReporter"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.python komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 11:35:52.380 [error] [ms-python.python]: editor/content önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribEditorContentMenu"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.python komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 11:36:37.788 [info] [perf] Render performance baseline is 140ms
+2024-10-19 11:36:40.389 [warning] [backup tracker] suspended, ignoring unregister event file:///home/xeyossr/Documents/Coding/GalacticAcademyBot/package.json 
+2024-10-19 11:36:41.728 [info] Started local extension host with pid 68100.
+2024-10-19 11:36:42.849 [error] Error scanning extensions at /$HOME/.vscode-oss/extensions/undefined_publisher.wallbash-0.0.1: Var olmayan '/$HOME/.vscode-oss/extensions/undefined_publisher.wallbash-0.0.1' dosyası çözümlenemiyor
+2024-10-19 11:36:42.852 [error] Extension 'ms-python.debugpy CANNOT USE these API proposals 'portsAttributes, contribIssueReporter, debugVisualization, contribViewsWelcome'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2024-10-19 11:36:42.853 [error] Extension 'ms-python.python CANNOT USE these API proposals 'contribEditorContentMenu, quickPickSortByLabel, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, contribIssueReporter, codeActionAI, notebookReplDocument, notebookVariableProvider'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2024-10-19 11:36:42.906 [error] [ms-python.debugpy]: issue/reporter önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribIssueReporter"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.debugpy komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 11:36:42.910 [error] [ms-python.python]: issue/reporter önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribIssueReporter"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.python komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 11:36:42.911 [error] [ms-python.python]: editor/content önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribEditorContentMenu"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.python komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 11:36:44.890 [info] [perf] Render performance baseline is 111ms
+2024-10-19 11:38:00.083 [error] spawn /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/python-env-tools/bin/pet ENOENT: Error: spawn /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/python-env-tools/bin/pet ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:286:19)
+    at onErrorNT (node:internal/child_process:484:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-10-19 11:41:42.976 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 11:41:44.548 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 11:41:45.556 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 11:41:52.523 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 11:41:54.069 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 11:41:55.780 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 11:41:58.287 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 11:42:01.223 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 11:42:17.664 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 11:42:18.761 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 11:48:47.681 [warning] [File Watcher] Watcher shutdown because watched path got deleted (path: /home/xeyossr/Documents/Coding/Day #30 - Music Player App)
+2024-10-19 11:48:47.685 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2024-10-19 11:49:00.454 [info] Started local extension host with pid 78945.
+2024-10-19 11:49:01.892 [error] Error scanning extensions at /$HOME/.vscode-oss/extensions/undefined_publisher.wallbash-0.0.1: Var olmayan '/$HOME/.vscode-oss/extensions/undefined_publisher.wallbash-0.0.1' dosyası çözümlenemiyor
+2024-10-19 11:49:01.896 [error] Extension 'ms-python.debugpy CANNOT USE these API proposals 'portsAttributes, contribIssueReporter, debugVisualization, contribViewsWelcome'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2024-10-19 11:49:01.897 [error] Extension 'ms-python.python CANNOT USE these API proposals 'contribEditorContentMenu, quickPickSortByLabel, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, contribIssueReporter, codeActionAI, notebookReplDocument, notebookVariableProvider'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2024-10-19 11:49:01.970 [error] [ms-python.debugpy]: issue/reporter önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribIssueReporter"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.debugpy komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 11:49:01.970 [error] [ms-python.python]: issue/reporter önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribIssueReporter"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.python komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 11:49:01.971 [error] [ms-python.python]: editor/content önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribEditorContentMenu"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.python komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 11:49:04.204 [error] spawn /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/python-env-tools/bin/pet ENOENT: Error: spawn /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
+	at onErrorNT (node:internal/child_process:484:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-10-19 11:49:04.284 [info] [perf] Render performance baseline is 91ms
+2024-10-19 11:49:16.930 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 11:49:30.119 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 12:16:19.733 [info] Started local extension host with pid 102173.
+2024-10-19 12:16:21.553 [error] Error scanning extensions at /$HOME/.vscode-oss/extensions/undefined_publisher.wallbash-0.0.1: Var olmayan '/$HOME/.vscode-oss/extensions/undefined_publisher.wallbash-0.0.1' dosyası çözümlenemiyor
+2024-10-19 12:16:21.561 [error] Extension 'ms-python.debugpy CANNOT USE these API proposals 'portsAttributes, contribIssueReporter, debugVisualization, contribViewsWelcome'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2024-10-19 12:16:21.561 [error] Extension 'ms-python.python CANNOT USE these API proposals 'contribEditorContentMenu, quickPickSortByLabel, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, contribIssueReporter, codeActionAI, notebookReplDocument, notebookVariableProvider'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2024-10-19 12:16:21.685 [error] [ms-python.debugpy]: issue/reporter önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribIssueReporter"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.debugpy komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 12:16:21.686 [error] [ms-python.python]: issue/reporter önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribIssueReporter"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.python komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 12:16:21.690 [error] [ms-python.python]: editor/content önerilen bir menü tanımlayıcısıdır. 'package.json#enabledApiProposals: ["contribEditorContentMenu"]' özelliğini gerektirir ve yalnızca geliştirme dışında veya --enable-proposed-api ms-python.python komut satırı anahtarıyla çalışırken kullanılabilir
+2024-10-19 12:16:26.050 [error] spawn /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/python-env-tools/bin/pet ENOENT: Error: spawn /home/xeyossr/.vscode-oss/extensions/ms-python.python-2024.16.1-universal/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
+	at onErrorNT (node:internal/child_process:484:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-10-19 12:16:32.607 [info] [perf] Render performance baseline is 111ms
+2024-10-19 12:32:57.240 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 12:33:13.588 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 12:42:14.191 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 12:42:28.203 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 12:42:30.763 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 12:42:34.714 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 12:42:41.886 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 12:42:46.015 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 12:42:48.558 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 12:42:58.949 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 12:43:22.773 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 13:10:32.217 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 13:11:50.089 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 13:11:53.950 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 13:11:55.296 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 13:11:56.854 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 13:13:06.170 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 13:13:12.170 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 13:15:32.532 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 13:18:20.749 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.
+2024-10-19 13:18:24.918 [error] Beklenmeyen bir hata oluştu. Daha fazla ayrıntı için lütfen günlüğe bakın.

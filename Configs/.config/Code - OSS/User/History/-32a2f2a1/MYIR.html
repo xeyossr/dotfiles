@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Stalker</title>
+</head>
+<body>
+
+    <div class="search-container">
+        <div class="input-field">
+            <input type="text" id="usernameInput" placeholder="Enter username">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result" id="resultArea"></div>
+    </div>
+
+    <script>
+        const inputField = document.getElementById('usernameInput');
+        const searchButton = document.getElementById('searchBtn');
+        const resultArea = document.getElementById('resultArea');
+
+        // Butona tıklama veya Enter tuşu ile arama
+        searchButton.addEventListener('click', () => {
+            searchUsername();
+        });
+
+        inputField.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                searchUsername();
+            }
+        });
+
+        // Arama işlemini başlat
+        function searchUsername() {
+            const username = inputField.value.trim();
+            if (username) {
+                fetch('/search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({username}), /* */
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Backend'den gelen sonuçları ekrana yaz
+                    resultArea.innerHTML = '';
+                    Object.keys(data.results).forEach(platform => {
+                        const status = data.results[platform] ? "Mevcut" : "Bulunamadı";
+                        resultArea.innerHTML += `<p><strong>${platform}</strong>: ${status}</p>`;
+                    });
+                })
+                .catch(error => {
+                    resultArea.innerHTML = `<p style="color: red;">Bir hata oluştu: ${error.message}</p>`;
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>

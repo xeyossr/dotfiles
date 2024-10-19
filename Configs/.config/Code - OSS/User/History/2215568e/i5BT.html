@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Input Form</title>
+    <script>
+        // Popup aç/kapa işlevleri
+        function openPopup() {
+            document.getElementById("popupForm").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popupForm").style.display = "none";
+        }
+
+        // Task'ı formdan gönder
+        function submitForm(event) {
+            event.preventDefault();
+
+            let formData = new FormData(document.getElementById('taskForm'));
+
+            // Bilgileri backend'e POST etmek için fetch kullanıyoruz
+            fetch('/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    alert("Gönderim başarılı!");
+                    closePopup();
+                    // Task'ları yeniden yükle
+                    loadTasks();
+                } else {
+                    alert("Bir hata oluştu.");
+                }
+            })
+            .catch(error => {
+                console.error('Hata:', error);
+            });
+        }
+
+
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('delete-button')) {
+                const taskDiv = event.target.parentElement; // Div’i seç
+                const taskName = event.target.getAttribute('data-name');
+
+                // Silme isteği gönder
+                fetch('/delete', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name: taskName }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        // Silinen öğeyi arayüzden kaldır
+                        taskDiv.style.transition = 'opacity 0.5s'; // Yavaşça kaybolması için geçiş ekle
+                        taskDiv.style.opacity = '0'; // Opaklığı sıfıra düşür
+
+                        // Geçiş sonrası div’i kaldır
+                        setTimeout(() => {
+                            taskDiv.remove();
+                        }, 500); // 0.5 saniye bekle
+                    } else {
+                        console.error(data.message);
+                    }
+                });
+            }
+        });
+
+
+
+
+        // Tüm task'ları listeleyen fonksiyon
+        function loadTasks() {
+            fetch('/tasks')
+            .then(response => response.json())
+            .then(tasks => {
+                const taskContainer = document.getElementById("taskContainer");
+                taskContainer.innerHTML = ""; // Mevcut içerikleri temizle
+                tasks.forEach(task => {
+                    // Her task için yeni bir div oluşturuyoruz
+                    const taskDiv = document.createElement("div");
+                    taskDiv.classList.add("task-box");
+                    taskDiv.innerHTML = `
+                        <div class="task-info">
+                            <img src="${task.image_url}" class="task-image" alt="Task Image" width="100" height="100">
+                            <h3>${task.name}</h3>
+                            <p>${task.description}</p>
+                            <span>${task.when} - ${task.time}</span>
+                            <button class="delete-button" data-name="${task.name}">&#x1F5D1;</button>  <!-- Nerd Font Delete Icon -->
+                        </div>
+                    `;
+                    taskContainer.appendChild(taskDiv);
+                });
+            })
+            .catch(error => {
+                console.error('Hata:', error);
+            });
+        }
+
+        // Sayfa yüklendiğinde task'ları yükle
+        window.onload = loadTasks;
+    </script>
+    <style>
+        /* Popup stilini ayarlıyoruz */
+        #popupForm {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: white;
+            z-index: 1000;
+        }
+
+        /* Task kutucuklarının stili */
+        .task-box {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+
+        .task-image {
+            margin-right: 15px;
+        }
+
+        .task-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .task-info h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .task-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .task-info span {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .task {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            position: relative; /* Pozisyonu ayarla */
+            transition: transform 0.3s; /* Geçiş efekti */
+        }
+
+        .task:hover {
+            transform: scale(1.02); /* Hover etkisi */
+        }
+
+        .delete-button {
+            background: none;
+            border: none;
+            color: red; /* İkonun rengi */
+            cursor: pointer;
+            font-size: 20px; /* İkon boyutu */
+            position: absolute; /* Sağda konumlandır */
+            right: 10px; /* Sağdan mesafe */
+            top: 10px; /* Üstten mesafe */
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="openPopup()">Add Task</button>
+
+    <!-- Popup Form -->
+    <div id="popupForm">
+        <form id="taskForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br><br>
+
+            <label for="image_url">Image URL:</label>
+            <input type="url" id="image_url" name="image_url"><br><br>
+
+            <label for="image_file">Image File:</label>
+            <input type="file" id="image_file" name="image_file" accept="image/*"><br><br>
+
+            <label for="when">When:</label>
+            <select id="when" name="when">
+                <option value="everyday">Her gün</option>
+                <option value="monday">Pazartesi</option>
+                <option value="tuesday">Salı</option>
+                <option value="wednesday">Çarşamba</option>
+                <option value="thursday">Perşembe</option>
+                <option value="friday">Cuma</option>
+                <option value="saturday">Cumartesi</option>
+                <option value="sunday">Pazar</option>
+            </select><br><br>
+
+            <label for="time">Time (HH:MM):</label>
+            <input type="time" id="time" name="time" required><br><br>
+
+            <button type="submit">Add</button>
+            <button type="button" onclick="closePopup()">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Task'ların gösterileceği alan -->
+    <div id="taskContainer"></div>
+
+</body>
+</html>

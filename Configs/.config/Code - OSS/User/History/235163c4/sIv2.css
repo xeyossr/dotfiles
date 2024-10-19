@@ -1,0 +1,20 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Yatayda ortala */
+    align-items: center;     /* Dikeyde ortala */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.login-form {
+    display: flex;
+            flex-direction: column; /* Form elemanlarını dikeyde hizala */
+            justify-content: center; /* Dikeyde ortalama */
+            align-items: center;     /* Yatayda ortalama */
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

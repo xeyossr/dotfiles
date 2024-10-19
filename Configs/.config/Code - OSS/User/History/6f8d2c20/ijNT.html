@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Mesajları</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #36393F; /* Dark tema arka plan rengi */
+            color: white; /* Yazı rengi */
+            padding: 20px;
+        }
+        #messages {
+            border: none;
+            padding: 10px;
+            height: 550px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+            background-color: #2F3136; /* Mesaj alanı arka plan rengi */
+            scrollbar-width: thin; /* Firefox için ince kaydırıcı */
+            scrollbar-color: #7289DA #2F3136; /* Kaydırıcı ve arka plan rengi */
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        /* Chrome, Safari ve Edge için kaydırıcı stil */
+        #messages::-webkit-scrollbar {
+            width: 8px; /* Kaydırıcı genişliği */
+        }
+        #messages::-webkit-scrollbar-track {
+            background: #2F3136; /* Kaydırıcı arka plan rengi */
+        }
+        #messages::-webkit-scrollbar-thumb {
+            background-color: #7289DA; /* Kaydırıcı rengi */
+            border-radius: 10px; /* Köşe yuvarlama */
+        }
+        #messages::-webkit-scrollbar-thumb:hover {
+            background-color: #5B6EAE; /* Hover rengi */
+        }
+        .message-input {
+            width: calc(100% - 90px); /* Buton genişliğine göre ayarlama */
+            padding: 10px;
+            margin-top: 0px;
+            background-color: #40444B; /* Input alanı arka plan rengi */
+            color: white; /* Input yazı rengi */
+            border: 1px solid #40444B;
+            border-radius: 5px; /* Küçük border-radius */
+            box-sizing: border-box; /* Padding'i kapsama al */
+            display: inline-block; /* Yan yana görünmesi için */
+        }
+        .message-input:focus {
+            outline: none;
+        }
+        #send-button {
+            padding: 10px 20px;
+            background-color: #7289DA; /* Buton rengi */
+            color: white; /* Buton yazı rengi */
+            border: none;
+            border-radius: 5px; /* Küçük border-radius */
+            cursor: pointer;
+            margin-left: 10px; /* Mesaj inputundan boşluk bırak */
+            display: inline-block; /* Yan yana görünmesi için */
+        }
+        #send-button:hover {
+            background-color: #5B6EAE; /* Buton hover rengi */
+        }
+        .message {
+            margin-bottom: 10px; /* Mesajlar arasındaki boşluk */
+        }
+        .message img {
+            max-width: 250px; /* Resimlerin boyutu */
+            display: block; /* Resimleri blok yap */
+            margin: 5px 0; /* Resimler ile metin arasında boşluk */
+        }
+        #guilds, #channels {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="guilds"></div>
+    <div id="channels"></div>
+    <div id="messages"></div>
+
+    <div style="display: flex; margin-top: 10px;">
+        <input id="message" class="message-input" placeholder="Mesajınızı buraya yazın..." style="flex-grow: 1;"/>
+        <button id="send-button">Gönder</button>
+    </div>
+
+    <script>
+        const socket = io();
+        
+        let selectedGuild = null;
+        let selectedChannel = null;
+
+        // Sayfa yüklendiğinde mesajları yükle
+        window.onload = function() {
+            const savedMessages = JSON.parse(localStorage.getItem('messages')) || [];
+            savedMessages.forEach(message_data => {
+                addMessageToChat(message_data);
+            });
+        };
+    
+        // Yeni mesaj geldiğinde
+        socket.on('new_message', function(message_data) {
+            addMessageToChat(message_data);
+            saveMessageToLocalStorage(message_data);
+        });
+    
+        function addMessageToChat(message_data) {
+            const messageElement = document.createElement('div');
+            messageElement.innerHTML = `<strong><a href="#" onclick="addMention('${message_data.author_id}')">${message_data.author}</a></strong>: ${message_data.content}`;
+            
+            // Ekli dosyaları göster
+            /*if (message_data.attachments.length > 0) {
+                message_data.attachments.forEach(url => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = url;
+                    imgElement.style.maxWidth = '250px';  // Resim boyutunu ayarla
+                    imgElement.style.display = 'block';  // Alt alta göstermek için
+                    messageElement.appendChild(imgElement);
+                });
+            }*/
+    
+            document.getElementById('messages').appendChild(messageElement);
+            document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight; // Aşağı kaydır
+        }
+    
+        function saveMessageToLocalStorage(message_data) {
+            const savedMessages = JSON.parse(localStorage.getItem('messages')) || [];
+            savedMessages.push(message_data);
+            localStorage.setItem('messages', JSON.stringify(savedMessages));
+        }
+    
+        // Kullanıcı ID'sini inputa eklemek için
+        function addMention(userId) {
+            const messageInput = document.getElementById('message');
+            messageInput.value += `<@${userId}> `;
+            messageInput.focus();
+        }
+    
+        // Mesaj gönderme
+        document.getElementById('send-button').addEventListener('click', function() {
+            const messageContent = document.getElementById('message').value;
+            fetch('/send_message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ content: messageContent })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log('Mesaj gönderildi!');
+                    document.getElementById('message').value = ''; // Mesaj kutusunu sıfırla
+                } else {
+                    console.error('Mesaj gönderilemedi.');
+                }
+            })
+            .catch((error) => {
+                console.error('Hata:', error);
+            });
+        });
+
+        // Sunucular geldiğinde listele
+        socket.on('guilds_list', function(guilds) {
+            const guildContainer = document.getElementById('guilds');
+            guildContainer.innerHTML = '<h3>Sunucular:</h3>';
+            guilds.forEach(guild => {
+                const guildElement = document.createElement('button');
+                guildElement.textContent = guild.name;
+                guildElement.onclick = function() {
+                    selectedGuild = guild.id;
+                    loadChannels(guild.id);
+                };
+                guildContainer.appendChild(guildElement);
+            });
+        });
+
+        // Kanalları yükle
+        
+        function loadChannels(guildId) {
+            fetch(`/channels/${guildId}`)  // guildId'yi string olarak gönderin
+                .then(response => response.json())
+                .then(channels => {
+                    const channelContainer = document.getElementById('channels');
+                    channelContainer.innerHTML = '<h3>Kanallar:</h3>';
+                    channels.forEach(channel => {
+                        const channelElement = document.createElement('button');
+                        channelElement.textContent = channel.name;
+                        channelElement.onclick = function() {
+                            selectedChannel = channel.id;
+                            loadMessages(channel.id);  // Mesajları yükle
+                        };
+                        channelContainer.appendChild(channelElement);
+                    });
+                });
+        }
+
+
+        // Mesajları yükle
+        function loadMessages(channelId) {
+            fetch(`/messages/${channelId}`)
+                .then(response => response.json())
+                .then(data => {
+                    const messagesContainer = document.getElementById('messages');
+                    messagesContainer.innerHTML = '';
+                    data.messages.forEach(message => {
+                        const messageElement = document.createElement('div');
+                        messageElement.innerHTML = `<strong>${message.author}</strong>: ${message.content}`;
+                        messagesContainer.appendChild(messageElement);
+                    });
+                });
+        }
+
+        // Mesaj gönderme
+        document.getElementById('send-button').addEventListener('click', function() {
+            const messageContent = document.getElementById('message').value;
+            fetch('/send_message', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ content: messageContent })
+            }).then(() => {
+                document.getElementById('message').value = '';
+            });
+        });
+    </script>
+    
+</body>
+</html>

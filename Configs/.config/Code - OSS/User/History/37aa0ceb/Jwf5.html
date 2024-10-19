@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Mesajları</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        #messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 400px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        #message-input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        button {
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Discord Mesajları</h1>
+    <div id="messages"></div>
+    <input id="message" type="text" placeholder="Mesajınızı buraya yazın..." />
+    <button id="send-button">Gönder</button>
+
+    <script>
+        document.getElementById('send-button').addEventListener('click', function() {
+            const messageContent = document.getElementById('message').value;
+            fetch('/send_message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ content: messageContent })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log('Mesaj gönderildi!');
+                } else {
+                    console.error('Mesaj gönderilemedi.');
+                }
+            })
+            .catch((error) => {
+                console.error('Hata:', error);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+// Varsayılanları geçersiz kılmak için tuş bağlamalarınızı bu dosyaya yerleştirin
+[
+    {
+        "key": "ctrl+alt+d",
+        "command": "discord-tools.openDiscordChat"
+    }
+]

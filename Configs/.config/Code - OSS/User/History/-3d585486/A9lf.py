@@ -1,0 +1,147 @@
+from flask import Flask, send_from_directory, request, jsonify, render_template
+import os
+import json
+
+app = Flask(__name__)
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+# Kayıtlı verilerin tutulduğu dosya (örn: tasks.json)
+DATA_FILE = 'data.json'
+
+# Eğer dosya yoksa oluştur
+if not os.path.exists(DATA_FILE):
+    with open(DATA_FILE, 'w') as f:
+        json.dump([], f)
+
+# HTML dosyasını render eder
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+# Formdan gelen verileri işleyen fonksiyon
+@app.route('/submit', methods=['POST'])
+@app.route('/submit', methods=['POST'])
+def submit_form():
+    # Formdan gelen verileri alalım
+    name = request.form.get('name')
+    description = request.form.get('description')
+    image_url = request.form.get('image_url')  # URL ya da dosya olabilir
+    when = request.form.get('when')
+    time = request.form.get('time')  # saat ve dakika kısmı
+    
+    # Dosya kontrolü (image file yükleme)
+    if 'image_file' in request.files:
+        image_file = request.files['image_file']
+        if image_file.filename != '':
+            # uploads klasörü yoksa oluştur
+            if not os.path.exists('static/uploads'):
+                os.makedirs('static/uploads')
+
+            image_path = os.path.join('static/uploads', image_file.filename)
+            image_file.save(image_path)
+            image_url = f"/static/uploads/{image_file.filename}"  # Sunucu yolu ile URL oluştur
+            
+    # Verileri JSON formatında yazalım
+    new_task = {
+        'name': name,
+        'description': description,
+        'image_url': image_url,
+        'when': when,
+        'time': time
+    }
+
+    # Mevcut verileri yükleyelim ve yeni veriyi ekleyelim
+    with open(DATA_FILE, 'r') as f:
+        data = json.load(f)
+    
+    data.append(new_task)
+    
+    with open(DATA_FILE, 'w') as f:
+        json.dump(data, f, indent=4)
+
+    return jsonify({'status': 'success', 'message': 'Veri kaydedildi!'})
+
+# Task'ları JSON dosyasından okuyup frontend'e gönderir
+@app.route('/tasks', methods=['GET'])
+def get_tasks():
+    with open(DATA_FILE, 'r') as f:
+        data = json.load(f)
+    return jsonify(data)
+
+@app.route('/delete', methods=['POST'])
+def delete_task():
+    task_name = request.json.get('name')
+
+    # Verileri yükleyelim ve belirtilen görevi silelim
+    with open(DATA_FILE, 'r') as f:
+        data = json.load(f)
+    
+    # Belirtilen görevi bul ve sil
+    data = [task for task in data if task['name'] != task_name]
+
+    with open(DATA_FILE, 'w') as f:
+        json.dump(data, f, indent=4)
+
+    return jsonify({'status': 'success', 'message': 'Görev silindi!'})
+
+@app.route('/edit-task', methods=['POST'])
+def edit_task():
+    data = request.get_json()
+    print("Received data:", data)  # Gelen veriyi konsola yazdır
+
+    with open('data.json', 'r') as file:
+        tasks = json.load(file)
+
+    # Görevi adıyla bul ve güncelle
+    for task in tasks:
+        if task['name'] == data['name']:
+            task['description'] = data['description']
+            task['image_url'] = data['image_url']
+            task['when'] = data['when']
+            task['time'] = data['time']
+
+    with open('data.json', 'w') as file:
+        json.dump(tasks, file, indent=4)
+
+    return jsonify({'status': 'Task updated successfully!'})
+
+
+@app.route('/get-task', methods=['GET'])
+def get_task():
+    with open('data.json') as file:
+        tasks = json.load(file)
+    return jsonify(tasks)
+
+
+@app.route('/data.json')
+def serve_data():
+    try:
+        return send_from_directory('', 'data.json')  # Eğer data.json kök dizindeyse
+    except Exception as e:
+        print(f"Hata: {e}")
+        return "Hata oluştu", 500  # Hata mesajı döndür
+
+@app.route('/update', methods=['POST'])
+def update_task():
+    updated_task = request.json
+    # data.json dosyasını oku
+    with open('data.json', 'r') as f:
+        tasks = json.load(f)
+
+    # Güncellenen görevi bul ve değiştir
+    for task in tasks:
+        if task['name'] == updated_task['name']:
+            task.update(updated_task)
+            break
+
+    # Güncellenmiş verileri dosyaya yaz
+    with open('data.json', 'w') as f:
+        json.dump(tasks, f)
+
+    return jsonify({'status': 'success'})
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

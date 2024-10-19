@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "alocalias",
+    "version": "1.0",
+    "description": "Redirects xxx.xxx to localhost:xxx",
+    "permissions": ["tabs", "webRequest", "webRequestBlocking", "<all_urls>"],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

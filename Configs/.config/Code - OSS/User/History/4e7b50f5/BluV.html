@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Oku</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+
+    {% for page_num, content in pages.items() %}
+        <h2>Sayfa {{ page_num }}</h2>
+        <p>{{ content }}</p>
+    {% endfor %}
+</body>
+</html>

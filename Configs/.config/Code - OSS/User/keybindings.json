@@ -1,0 +1,21 @@
+// Varsayılanları geçersiz kılmak için tuş bağlamalarınızı bu dosyaya yerleştirin
+[
+    {
+        "key": "ctrl+alt+d",
+        "command": "discord-tools.openDiscordChat"
+    },
+    {
+        "key": "alt+meta+d",
+        "command": "discord-tools.setUpDiscordToken"
+    },
+    {
+        "key": "shift+meta+i",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    }
+]

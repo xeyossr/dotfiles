@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Ekle</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Kitap Ekle</h1>
+
+    <form method="POST" action="/add_book">
+        <input type="text" name="title" placeholder="Kitap Başlığı" required>
+        <input type="text" name="author" placeholder="Yazar" required>
+        <textarea name="description" placeholder="Açıklama" required></textarea>
+        <input type="text" name="cover_image" placeholder="Kapak Resmi URL" required>
+        <textarea name="content" placeholder="İçerik (JSON formatında)" required></textarea>
+        <button type="submit">Kitap Ekle</button>
+    </form>
+
+    <h2>Veritabanındaki Tüm Kitaplar</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Başlık</th>
+                <th>Yazar</th>
+                <th>Açıklama</th>
+                <th>Kapak Resmi</th>
+                <th>İçerik</th>
+                <th>Sil</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.description }}</td>
+                <td><img src="{{ book.cover_image }}" alt="Kapak Resmi" width="50"></td>
+                <td>{{ book.content }}</td>
+                <td><a href="{{ url_for('delete_book', book_id=book.id) }}">Sil</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

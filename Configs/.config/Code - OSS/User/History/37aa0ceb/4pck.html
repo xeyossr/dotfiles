@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Mesajları</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        #messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 400px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        #message-input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Discord Mesajları</h1>
+    <div id="messages"></div>
+    <input id="message" type="text" placeholder="Mesajınızı buraya yazın..." />
+    <button id="send-button">Gönder</button>
+
+    <script>
+        const socket = io();
+
+        // Yeni mesaj geldiğinde
+        socket.on('new_message', function(message_data) {
+            const messageElement = document.createElement('div');
+            messageElement.innerHTML = `<strong>${message_data.author}</strong>: ${message_data.content}`;
+            document.getElementById('messages').appendChild(messageElement);
+            document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight; // Aşağı kaydır
+        });
+
+        // Mesaj gönderme
+        document.getElementById('message-input').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                const message = event.target.value;
+                if (message) {
+                    fetch('/send_message', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ content: message })
+                    });
+                    event.target.value = ''; // Inputu temizle
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Mesajları</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #36393F; /* Dark tema arka plan rengi */
+            color: white; /* Yazı rengi */
+            padding: 20px;
+        }
+        #messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 550px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+            background-color: #2F3136; /* Mesaj alanı arka plan rengi */
+            scrollbar-width: thin; /* Firefox için ince kaydırıcı */
+            scrollbar-color: #7289DA #2F3136; /* Kaydırıcı ve arka plan rengi */
+        }
+        /* Chrome, Safari ve Edge için kaydırıcı stil */
+        #messages::-webkit-scrollbar {
+            width: 8px; /* Kaydırıcı genişliği */
+        }
+        #messages::-webkit-scrollbar-track {
+            background: #2F3136; /* Kaydırıcı arka plan rengi */
+        }
+        #messages::-webkit-scrollbar-thumb {
+            background-color: #7289DA; /* Kaydırıcı rengi */
+            border-radius: 10px; /* Köşe yuvarlama */
+        }
+        #messages::-webkit-scrollbar-thumb:hover {
+            background-color: #5B6EAE; /* Hover rengi */
+        }
+        #message-input {
+            width: calc(100% - 90px); /* Buton genişliğine göre ayarlama */
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #40444B; /* Input alanı arka plan rengi */
+            color: white; /* Input yazı rengi */
+            border: 1px solid #ccc;
+            border-radius: 5px; /* Küçük border-radius */
+            box-sizing: border-box; /* Padding'i kapsama al */
+            display: inline-block; /* Yan yana görünmesi için */
+        }
+        #send-button {
+            padding: 10px 20px;
+            background-color: #7289DA; /* Buton rengi */
+            color: white; /* Buton yazı rengi */
+            border: none;
+            border-radius: 5px; /* Küçük border-radius */
+            cursor: pointer;
+            margin-left: 10px; /* Mesaj inputundan boşluk bırak */
+            display: inline-block; /* Yan yana görünmesi için */
+        }
+        #send-button:hover {
+            background-color: #5B6EAE; /* Buton hover rengi */
+        }
+    </style>
+</head>
+<body>
+    <div id="messages"></div>
+    <div style="display: flex; margin-top: 10px;">
+        <input id="message" type="text" placeholder="Mesajınızı buraya yazın..." style="flex-grow: 1;"/>
+        <button id="send-button">Gönder</button>
+    </div>
+
+    <script>
+        const socket = io();
+
+        // Yeni mesaj geldiğinde
+        socket.on('new_message', function(message_data) {
+            const messageElement = document.createElement('div');
+            messageElement.innerHTML = `<strong style="cursor: pointer;" onclick="mentionUser(${message_data.author_id})">${message_data.author}</strong>: ${message_data.content}`;
+            
+            // Eğer mesajda bir medya varsa, HTML içeriği ekle
+            if (message_data.content.includes('.jpg') || message_data.content.includes('.png') || message_data.content.includes('.gif')) {
+                const img = document.createElement('img');
+                img.src = message_data.content; // Mesaj içeriği medya URL'si olarak alınır
+                img.style.maxWidth = '100%'; // Resmin genişliğini ayarla
+                messageElement.appendChild(img);
+            }
+
+            document.getElementById('messages').appendChild(messageElement);
+            document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight; // Aşağı kaydır
+        });
+
+        // Kullanıcıyı etiketleme
+        function mentionUser(userId) {
+            const messageInput = document.getElementById('message');
+            messageInput.value += `<@${userId}>`; // Mesaj girişi alanına kullanıcı ID'sini ekle
+            messageInput.focus(); // Input alanına odaklan
+        }
+
+        // Mesaj gönderme
+        document.getElementById('send-button').addEventListener('click', function() {
+            const messageContent = document.getElementById('message').value;
+            fetch('/send_message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ content: messageContent })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log('Mesaj gönderildi!');
+                    document.getElementById('message').value = ''; // Mesaj kutusunu sıfırla
+                } else {
+                    console.error('Mesaj gönderilemedi.');
+                }
+            })
+            .catch((error) => {
+                console.error('Hata:', error);
+            });
+        });
+    </script>
+</body>
+</html>

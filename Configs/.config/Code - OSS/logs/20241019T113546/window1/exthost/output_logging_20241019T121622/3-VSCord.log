@@ -1,0 +1,12 @@
+[12:16:29 PM] [INFO] Discord Rich Presence for VS Code activated.
+[12:16:29 PM] [INFO] Registered Discord Rich Presence commands
+[12:16:29 PM] [INFO] Successfully connected to Discord
+[12:16:29 PM] [INFO] [004] Debug: Enabling Discord Rich Presence
+[12:16:29 PM] [INFO] [004] Debug: Logging in with client ID "782685898163617802"
+[12:16:29 PM] [INFO] [004] Debug: Login - isConnected true isReady 782685898163617802
+[12:16:29 PM] [INFO] [004] Debug: Login - [object Object]
+[12:16:29 PM] [INFO] [004] Debug: Client Should be logged in
+[12:16:29 PM] [INFO] [004] Debug: Enable - [object Object]
+[12:16:29 PM] [INFO] [004] Debug: Enabled - isConnected true isReady 782685898163617802
+[1:21:07 PM] [INFO] Discord Rich Presence for VS Code deactivated.
+[1:21:07 PM] [INFO] [004] Destroyed Discord RPC client

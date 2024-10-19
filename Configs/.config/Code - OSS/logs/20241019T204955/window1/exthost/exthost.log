@@ -1,0 +1,128 @@
+2024-10-19 20:49:59.092 [info] Extension host with pid 26244 started
+2024-10-19 20:49:59.092 [info] Skipping acquiring lock for /home/xeyossr/.config/Code - OSS/User/workspaceStorage/498cac0b909dce843f21c181836d12ec.
+2024-10-19 20:50:00.189 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-10-19 20:50:00.193 [info] ExtensionService#_doActivateExtension Darkempire78.discord-tools, startup: true, activationEvent: '*'
+2024-10-19 20:50:00.664 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2024-10-19 20:50:00.665 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2024-10-19 20:50:00.666 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-10-19 20:50:01.663 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-10-19 20:50:01.664 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-10-19 20:50:02.331 [warning] [vscode.git] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for 'git.openRepositoryInParentFolders', provide the URI of a resource or 'null' for any resource.
+2024-10-19 20:50:02.331 [warning] [vscode.git] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for 'git.showProgress', provide the URI of a resource or 'null' for any resource.
+2024-10-19 20:50:02.389 [info] Eager extensions activated
+2024-10-19 20:50:02.730 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-10-19 20:50:02.734 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-19 20:50:02.737 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2024-10-19 20:50:02.748 [info] ExtensionService#_doActivateExtension LeonardSSH.vscord, startup: false, activationEvent: 'onStartupFinished'
+2024-10-19 20:50:02.992 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2024-10-19 20:50:03.952 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2024-10-19 20:50:04.022 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2024-10-19 20:50:04.309 [warning] [vscode.markdown-math] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for 'markdown.math.macros', provide the URI of a resource or 'null' for any resource.
+2024-10-19 20:50:23.571 [warning] [vscode.markdown-math] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for 'markdown.math.macros', provide the URI of a resource or 'null' for any resource.
+2024-10-19 20:59:19.492 [info] ExtensionService#_doActivateExtension vscode.media-preview, startup: false, activationEvent: 'onCustomEditor:imagePreview.previewEditor'
+2024-10-19 20:59:36.040 [warning] [vscode.markdown-language-features] Accessing a window scoped configuration for a resource is not expected. To associate 'markdown.updateLinksOnFileMove.enabled' to a resource, define its scope to 'resource' in configuration contributions in 'package.json'.
+2024-10-19 21:09:22.036 [warning] [vscode.markdown-language-features] Accessing a window scoped configuration for a resource is not expected. To associate 'markdown.updateLinksOnFileMove.enabled' to a resource, define its scope to 'resource' in configuration contributions in 'package.json'.
+2024-10-19 21:21:18.085 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'
+2024-10-19 21:34:38.839 [warning] [vscode.markdown-language-features] Accessing a window scoped configuration for a resource is not expected. To associate 'markdown.updateLinksOnFileMove.enabled' to a resource, define its scope to 'resource' in configuration contributions in 'package.json'.
+2024-10-19 21:35:34.446 [warning] [vscode.markdown-language-features] Accessing a window scoped configuration for a resource is not expected. To associate 'markdown.updateLinksOnFileMove.enabled' to a resource, define its scope to 'resource' in configuration contributions in 'package.json'.
+2024-10-19 21:36:34.685 [warning] [vscode.markdown-language-features] Accessing a window scoped configuration for a resource is not expected. To associate 'markdown.updateLinksOnFileMove.enabled' to a resource, define its scope to 'resource' in configuration contributions in 'package.json'.
+2024-10-19 21:36:52.424 [info] Extension host terminating: renderer closed the MessagePort
+2024-10-19 21:36:52.582 [error] Canceled: Canceled
+    at new eA (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:109321)
+    at Zb.U (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113933)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:111427)
+    at T0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+    at T0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+    at r.registerCommand.description (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+    at T0.h (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+    at T0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+    at T0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+    at Object.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+    at gh.O [as value] (/usr/lib/code/extensions/git/dist/main.js:2:953034)
+    at T.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+    at T.C (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:802)
+    at T.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:1019)
+    at Object.p [as dispose] (/usr/lib/code/extensions/git/dist/main.js:2:973612)
+    at /usr/lib/code/extensions/git/dist/main.js:2:979734
+    at Array.forEach (<anonymous>)
+    at f.dispose (/usr/lib/code/extensions/git/dist/main.js:2:979720)
+    at D1.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:19996)
+    at D1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+    at D1.<anonymous> (/usr/lib/code/extensions/git/dist/main.js:2:955332)
+    at D1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+    at Si (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:701)
+    at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:14995
+    at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:1011
+    at Object.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+    at hB.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11922)
+    at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9877
+    at Array.map (<anonymous>)
+    at hB.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9865)
+    at hB.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10108)
+    at M3.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+    at ps (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+    at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11603)
+    at MessagePortMain.emit (node:events:519:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2619) setContext undefined
+2024-10-19 21:36:52.616 [error] Canceled: Canceled
+    at new eA (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:109321)
+    at Zb.U (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:113933)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:31:111427)
+    at T0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+    at T0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+    at r.registerCommand.description (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+    at T0.h (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+    at T0.g (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+    at T0.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+    at Object.executeCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+    at a.VscodeDevShareProvider.set hasGitHubRepositories [as hasGitHubRepositories] (/usr/lib/code/extensions/github/dist/extension.js:2:321578)
+    at /usr/lib/code/extensions/github/dist/extension.js:2:322537
+    at gh.value (/usr/lib/code/extensions/git/dist/main.js:2:1061875)
+    at T.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+    at T.C (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:802)
+    at T.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:1019)
+    at Object.p [as dispose] (/usr/lib/code/extensions/git/dist/main.js:2:973612)
+    at /usr/lib/code/extensions/git/dist/main.js:2:979734
+    at Array.forEach (<anonymous>)
+    at f.dispose (/usr/lib/code/extensions/git/dist/main.js:2:979720)
+    at D1.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:19996)
+    at D1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+    at D1.<anonymous> (/usr/lib/code/extensions/git/dist/main.js:2:955332)
+    at D1.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:108:20092)
+    at Si (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:701)
+    at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:14995
+    at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:24:1011
+    at Object.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+    at hB.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11922)
+    at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9877
+    at Array.map (<anonymous>)
+    at hB.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9865)
+    at hB.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10108)
+    at M3.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+    at ps (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+    at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11603)
+    at MessagePortMain.emit (node:events:519:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2619) setContext undefined
+2024-10-19 21:36:55.282 [info] Extension host with pid 81186 started
+2024-10-19 21:36:55.282 [info] Skipping acquiring lock for /home/xeyossr/.config/Code - OSS/User/workspaceStorage/498cac0b909dce843f21c181836d12ec.
+2024-10-19 21:36:55.643 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-10-19 21:36:55.645 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2024-10-19 21:36:55.646 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2024-10-19 21:36:57.093 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-10-19 21:36:57.095 [info] ExtensionService#_doActivateExtension Darkempire78.discord-tools, startup: true, activationEvent: '*'
+2024-10-19 21:36:57.527 [info] Extension host with pid 26244 exiting with code 0
+2024-10-19 21:36:58.214 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2024-10-19 21:36:58.252 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-10-19 21:36:58.253 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-10-19 21:36:58.349 [warning] [vscode.markdown-math] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for 'markdown.math.macros', provide the URI of a resource or 'null' for any resource.
+2024-10-19 21:36:58.870 [warning] [vscode.git] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for 'git.openRepositoryInParentFolders', provide the URI of a resource or 'null' for any resource.
+2024-10-19 21:36:58.870 [warning] [vscode.git] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for 'git.showProgress', provide the URI of a resource or 'null' for any resource.
+2024-10-19 21:36:58.934 [info] Eager extensions activated
+2024-10-19 21:36:59.097 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-10-19 21:36:59.099 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-19 21:36:59.100 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2024-10-19 21:36:59.111 [info] ExtensionService#_doActivateExtension LeonardSSH.vscord, startup: false, activationEvent: 'onStartupFinished'
+2024-10-19 21:36:59.296 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2024-10-19 21:37:00.164 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2024-10-19 21:38:53.525 [info] ExtensionService#_doActivateExtension vscode.media-preview, startup: false, activationEvent: 'onCustomEditor:imagePreview.previewEditor'
+2024-10-19 21:38:58.350 [warning] [vscode.markdown-language-features] Accessing a window scoped configuration for a resource is not expected. To associate 'markdown.updateLinksOnFileMove.enabled' to a resource, define its scope to 'resource' in configuration contributions in 'package.json'.
