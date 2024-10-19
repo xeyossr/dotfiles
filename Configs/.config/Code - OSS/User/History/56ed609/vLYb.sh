@@ -1,1 +1,0 @@
-yay -S discord swww spotify spicetify-cli cliphist wl-clipboard kitty krita obsidian pyprland hyprlock hypridle swaylock swayidle hyprland hyprpaper hyprpicker brave-bin firefox telegram-desktop-bin
